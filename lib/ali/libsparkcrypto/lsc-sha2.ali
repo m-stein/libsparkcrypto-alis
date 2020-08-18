@@ -1,0 +1,66 @@
+V "GNAT Lib v8"
+P ZX
+
+RN
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U lsc.sha2%s		lsc-sha2.ads		ebe8c0f9 NE OO PK IU
+Z interfaces%s		interfac.ads		interfac.ali
+W lsc%s			lsc.ads			lsc.ali
+W lsc.sha2_generic%s	lsc-sha2_generic.adb	lsc-sha2_generic.ali  EA
+W lsc.types%s		lsc-types.ads		lsc-types.ali
+Z system.arith_64%s	s-arit64.adb		s-arit64.ali
+
+D ada.ads		00000000000000 76789da1 ada%s
+D a-unccon.ads		00000000000000 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		00000000000000 5ab55268 interfaces%s
+D lsc.ads		00000000000000 51dd9bb7 lsc%s
+D lsc-internal.ads	00000000000000 c2d42930 lsc.internal%s
+D lsc-internal-convert_hash.ads  00000000000000 b2544208 lsc.internal.convert_hash%s
+D lsc-internal-convert_hash.adb  00000000000000 052e9dcb lsc.internal.convert_hash%b
+D lsc-internal-sha256.ads  00000000000000 d139cadc lsc.internal.sha256%s
+D lsc-internal-sha512.ads  00000000000000 7c902fbe lsc.internal.sha512%s
+D lsc-internal-types.ads  00000000000000 b0932367 lsc.internal.types%s
+D lsc-sha2.ads		00000000000000 10e5d67b lsc.sha2%s
+D lsc-sha2_generic.ads	00000000000000 c0251e01 lsc.sha2_generic%s
+D lsc-sha2_generic.adb	00000000000000 1000ede4 lsc.sha2_generic%b
+D lsc-types.ads		00000000000000 6af59334 lsc.types%s
+D system.ads		00000000000000 b7b1312c system%s
+D s-arit64.ads		00000000000000 a9f12339 system.arith_64%s
+D /home/lypo/genodelabs/genode/contrib/libsparkcrypto-128833c0cc96fb90bae3f02a69d1ea03dbf55d78/libsparkcrypto/src/../build/pragmas.adc  00000000000000 00000000
+X 3 interfac.ads
+55I9*Integer_64<long_long_integer>
+X 4 lsc.ads
+38K9*LSC 42e8 11|37r6 38r6 42r9 64r5
+X 11 lsc-sha2.ads
+42K13*SHA2 4|38k9 11|64l9 64e13
+44I12*SHA256_Hash_Index{14|42I12} 45r45 49r8
+45A12*SHA256_Hash_Type{14|45A9}<integer> 49r39
+47V13*Hash_SHA256[12|48]{14|45A9} 13|47b13
+51I12*SHA384_Hash_Index{14|42I12} 52r45 56r8
+52A12*SHA384_Hash_Type{14|45A9}<integer> 56r39
+54V13*Hash_SHA384[12|57]{14|45A9} 13|73b13
+58I12*SHA512_Hash_Index{14|42I12} 59r45 63r8
+59A12*SHA512_Hash_Type{14|45A9}<integer> 63r39
+61V13*Hash_SHA512[12|66]{14|45A9} 13|99b13
+X 12 lsc-sha2_generic.ads
+37K13*SHA2_Generic 11|37w10 40r27 47r32 54r32 61r32 12|68e21
+48v13*Hash_SHA256 11|47r45
+57v13*Hash_SHA384 11|54r45
+66v13*Hash_SHA512 11|61r45
+X 13 lsc-sha2_generic.adb
+49V16 Hash_Internal[6|65]{14|45A9} 7|41b13[11|47]
+75V16 Hash_Internal[6|65]{14|45A9} 7|41b13[11|54]
+101V16 Hash_Internal[6|65]{14|45A9} 7|41b13[11|61]
+X 14 lsc-types.ads
+37K13*Types 11|38w10 44r33 45r32 48r8 48r29 48r41 49r27 51r33 52r32 55r8
+. 55r29 55r41 56r27 58r33 59r32 62r8 62r29 62r41 63r27 14|47e14
+39M9*Byte 11|48r35 49r33 55r35 56r33 62r35 63r33
+42I12*Natural_Index{natural} 11|44r39 48r14 51r39 55r14 58r39 62r14
+45A9*Bytes(39M9)<integer> 11|45r38 48r47 52r38 55r47 59r38 62r47
+X 16 s-arit64.ads
+56I12*Int64{3|55I9}
+78V13*Multiply_With_Ovflo_Check{56I12} 79i<c,__gnat_mulv64>22
+

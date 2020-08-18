@@ -1,0 +1,72 @@
+V "GNAT Lib v8"
+P ZX
+
+RN
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U lsc.internal.io%b	lsc-internal-io.adb	72d190ce NE OO PK IU
+W lsc.internal%s	lsc-internal.ads	lsc-internal.ali
+
+U lsc.internal.io%s	lsc-internal-io.ads	26003659 NE OO PU PK IU
+W lsc%s			lsc.ads			lsc.ali
+W lsc.internal%s	lsc-internal.ads	lsc-internal.ali
+W lsc.internal.types%s	lsc-internal-types.adb	lsc-internal-types.ali
+
+D interfac.ads		00000000000000 5ab55268 interfaces%s
+D lsc.ads		00000000000000 51dd9bb7 lsc%s
+D lsc-internal.ads	00000000000000 c2d42930 lsc.internal%s
+D lsc-internal-io.ads	00000000000000 54473c0e lsc.internal.io%s
+D lsc-internal-io.adb	00000000000000 2696acc0 lsc.internal.io%b
+D lsc-internal-types.ads  00000000000000 b0932367 lsc.internal.types%s
+D system.ads		00000000000000 b7b1312c system%s
+D /home/lypo/genodelabs/genode/contrib/libsparkcrypto-128833c0cc96fb90bae3f02a69d1ea03dbf55d78/libsparkcrypto/src/../build/pragmas.adc  00000000000000 00000000
+X 1 interfac.ads
+63M9*Unsigned_8
+74M9*Unsigned_32
+77M9*Unsigned_64
+X 2 lsc.ads
+38K9*LSC 42e8 4|35r6 36r10 41r9 113r5 5|35r14 127r5
+X 3 lsc-internal.ads
+38K13*Internal 2|38k9 3|42e17 4|35r10 36r14 41r13 113r9 5|35r18 127r9
+X 4 lsc-internal-io.ads
+41K22*IO 3|38k13 4|113l18 113e20 5|35b27 127l18 127t20
+46U14*Put 46>19 5|39b14 42l8 42t11
+46a19 T{string} 47r31 5|39b19
+50U14*Put_Line 50>24 5|46b14 49l8 49t16
+50a24 T{string} 51r31 5|46b24
+54U14*New_Line 5|53b14 56l8 56t16
+58V13*Read_Byte{6|53M12} 5|60b13 63l8 63t17
+61V13*End_Of_Stream{boolean} 5|67b13 70l8 70t21
+64U14*Print_Byte 64>26 5|74b14 77l8 77t18
+64m26 Item{6|53M12} 65r31 5|74b26
+68U14*Print_Word32 68>28 5|81b14 84l8 84t20
+68m28 Item{6|56M12} 69r31 5|81b28
+72U14*Print_Word64 72>28 5|88b14 91l8 91t20
+72m28 Item{6|59M12} 73r31 5|88b28
+76U14*Print_Index 76>27 5|95b14 98l8 98t19
+76i27 I{6|50I9} 77r31 5|95b27
+80U14*Print_Natural 80>29 5|102b14 105l8 105t21
+80i29 I{natural} 81r31 5|102b29
+89U14*Print_Word32_Array 89>34 90>34 91>34 92>34 5|109b14 115l8 115t26
+89a34 Block{6|74A9} 94r29 5|109b34
+90i34 Space{natural} 94r36 5|110b34
+91i34 Break{6|50I9} 94r43 96r10 5|111b34
+92b34 Newln{boolean} 94r50 5|112b34
+104U14*Print_Word64_Array 104>34 105>34 106>34 107>34 5|119b14 125l8 125t26
+104a34 Block{6|77A9} 109r29 5|119b34
+105i34 Space{natural} 109r36 5|120b34
+106i34 Break{6|50I9} 109r43 111r10 5|121b34
+107b34 Newln{boolean} 109r50 5|122b34
+X 6 lsc-internal-types.ads
+43K22*Types 4|35w19 36r23 58r30 64r36 68r38 72r38 76r34 89r45 91r45 104r45
+. 106r45 5|60r30 74r36 81r38 88r38 95r34 109r45 111r45 119r45 121r45 6|95e23
+50I9*Index<short_short_integer> 4|36r29 76r40 91r51 106r51 5|95r40 111r51
+. 121r51
+53M12*Byte{1|63M9} 4|58r36 64r42 5|60r36 74r42
+56M12*Word32{1|74M9} 4|68r44 5|81r44
+59M12*Word64{1|77M9} 4|72r44 5|88r44
+74A9*Word32_Array_Type(56M12)<50I9> 4|89r51 5|109r51
+77A9*Word64_Array_Type(59M12)<50I9> 4|104r51 5|119r51
+

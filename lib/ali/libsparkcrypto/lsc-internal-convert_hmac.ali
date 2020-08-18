@@ -1,0 +1,90 @@
+V "GNAT Lib v8"
+P ZX
+
+RN
+RV NO_UNCHECKED_CONVERSION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U lsc.internal.convert_hmac%b  lsc-internal-convert_hmac.adb  6ada4c23 NE OO PK IU
+W ada%s			ada.ads			ada.ali
+W ada.unchecked_conversion%s
+W lsc.internal%s	lsc-internal.ads	lsc-internal.ali
+
+U lsc.internal.convert_hmac%s  lsc-internal-convert_hmac.ads  3d91a979 BN EE NE OO PK IU
+W lsc.internal%s	lsc-internal.ads	lsc-internal.ali
+
+D ada.ads		00000000000000 76789da1 ada%s
+D a-unccon.ads		00000000000000 0e9b276f ada.unchecked_conversion%s
+D lsc.ads		00000000000000 51dd9bb7 lsc%s
+D lsc-internal.ads	00000000000000 c2d42930 lsc.internal%s
+D lsc-internal-convert_hmac.ads  00000000000000 ff458049 lsc.internal.convert_hmac%s
+D lsc-internal-convert_hmac.adb  00000000000000 9b04eb05 lsc.internal.convert_hmac%b
+D system.ads		00000000000000 b7b1312c system%s
+D /home/lypo/genodelabs/genode/contrib/libsparkcrypto-128833c0cc96fb90bae3f02a69d1ea03dbf55d78/libsparkcrypto/src/../build/pragmas.adc  00000000000000 00000000
+X 1 ada.ads
+16K9*Ada 20e8 6|37r6 50r33 53r33 59r35 63r33 74r35
+X 2 a-unccon.ads
+20v14*Unchecked_Conversion 6|37w10 50r37 53r37 59r39 63r37 74r39
+X 3 lsc.ads
+38K9*LSC 42e8 5|37r9 73r5 6|39r14 109r5
+X 4 lsc-internal.ads
+38K13*Internal 3|38k9 4|42e17 5|37r13 73r9 6|39r18 109r9
+X 5 lsc-internal-convert_hmac.ads
+37K22*Convert_HMAC 4|38k13 5|73l18 73e30 6|39b27 109l18 109t30
+40i7 Block_Len{natural} 6|58r55 65r60 66r74 71r98 79r24 92r86 93r86 93r98
+. 97r54 98r54
+41i7 Hash_Len{natural} 6|83r74
+42E12 Key_Index_Type 44r31 6|46r22 71r33
+43E12 Key_Elem_Type 44r59 6|50r65 51r32
+44A12 Key_Type(43E12)<42E12> 67r37 67r54 70r20 6|42r20 72r32
+45E12 Message_Index_Type 47r35 6|45r22
+46E12 Message_Elem_Type 47r67 6|53r65 54r36
+47A12 Message_Type(46E12)<45E12> 71r20 6|43r20 57r36
+48E12 Hash_Index_Type 50r32
+49E12 Hash_Elem_Type 50r52
+50A12 Hash_Type(49E12)<48E12> 71r41 6|43r41 63r79
+51+12 Internal_Context_Type 56r71 58r55 61r57 65r41 6|68r18
+52+12 Internal_Block_Type 56r43 59r55 62r57 6|59r80 74r76
+53E12 Internal_Block_Length_Type 63r57 6|76r23
+54+12 Internal_Hash_Type 65r71 6|62r36 63r59
+56V21 Context_Init{51+12} 56>35 6|86s18
+56*35 Block{52+12}
+58U22 Context_Update 58=38 59>38 6|90s10
+58*38 Context{51+12} 6|91r14
+59*38 Block{52+12} 6|92r14
+61U22 Context_Finalize 61=40 62>40 63>40 6|100s7
+61*40 Context{51+12} 6|101r11
+62*40 Block{52+12} 6|102r11
+63*40 Length{53E12} 6|103r11
+65V21 Get_Auth{54+12} 65>31 6|105s25
+65*31 Context{51+12}
+67V21 Hash_Key{44A12} 67>31 6|83s92
+67*31 Key{44A12}
+69v13*HMAC_Generic 70>7 71>7 6|41b13 107l8 107t20
+70*7 Key{44A12} 6|42b7 79r10 81r74 81r94 83r102
+71*7 Message{47A12} 6|43b7 65r43 66r43 92r38 92r65 93r65 97r10 97r37 98r37
+X 6 lsc-internal-convert_hmac.adb
+45E15 MIT{5|45E12} 58r11 58r24 58r33 58r42 92r47 92r56 93r47 93r56 96r27
+. 96r36 97r19 97r28 98r19 98r28
+46E15 KIT{5|42E12} 71r54 71r67 71r76 71r85 81r38 81r47 83r38 83r47
+48M12 Byte 50r59 53r59
+50V16 To_Public[2|20]{5|43E12} 51s49
+51*7 Null_Key_Elem{5|43E12} 73r46
+53V16 To_Public[2|20]{5|46E12} 54s57
+54*7 Null_Message_Elem{5|46E12} 69r50
+57A15 Single_Block_Type{5|47A12}<5|45E12> 59r61 69r18
+59V16 To_Internal[2|20]{5|52+12} 92s25 102s22
+63V16 To_Public[2|20]{5|50A12} 105s14
+65i7 Full_Blocks{natural} 66r60 88r21 97r66 98r66
+66i7 Partial_Bytes{natural} 96r59 98r80 103r36
+68*7 Context{5|51+12} 86m7 91m25 91r25 101m22 101r22 105r35
+69*7 Temp{57A15} 96m7 96r13 96r45 102r35
+71E15 Full_Key_Index{5|42E12} 72r42
+72A15 Full_Key_Type{5|44A12}<5|42E12> 73r18 74r61
+73*7 Full_Key{72A15} 81m10 81r20 81r56 83m10 83r20 83r56 86r45
+74V16 To_Internal[2|20]{5|52+12} 86s32
+76E15 IBLT{5|53E12} 103r22
+88i11 I{integer} 92r82 93r82
+

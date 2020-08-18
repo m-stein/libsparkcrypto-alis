@@ -1,0 +1,63 @@
+V "GNAT Lib v8"
+P ZX
+
+RN
+RV NO_UNCHECKED_CONVERSION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U lsc.internal.convert%s  lsc-internal-convert.ads  0cb114a7 NE OO PK GE IU
+W ada%s			ada.ads			ada.ali
+W ada.unchecked_conversion%s
+W lsc%s			lsc.ads			lsc.ali
+W lsc.internal%s	lsc-internal.ads	lsc-internal.ali
+W lsc.internal.aes%s	lsc-internal-aes.adb	lsc-internal-aes.ali
+
+D ada.ads		00000000000000 76789da1 ada%s
+D a-unccon.ads		00000000000000 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		00000000000000 5ab55268 interfaces%s
+D lsc.ads		00000000000000 51dd9bb7 lsc%s
+D lsc-internal.ads	00000000000000 c2d42930 lsc.internal%s
+D lsc-internal-aes.ads	00000000000000 aa68241f lsc.internal.aes%s
+D lsc-internal-convert.ads  00000000000000 6a963ee7 lsc.internal.convert%s
+D lsc-internal-types.ads  00000000000000 b0932367 lsc.internal.types%s
+D system.ads		00000000000000 b7b1312c system%s
+D /home/lypo/genodelabs/genode/contrib/libsparkcrypto-128833c0cc96fb90bae3f02a69d1ea03dbf55d78/libsparkcrypto/src/../build/pragmas.adc  00000000000000 00000000
+X 1 ada.ads
+16K9*Ada 20e8 7|38r6 51r25 52r25 53r25 54r32 55r30
+X 2 a-unccon.ads
+20v14*Unchecked_Conversion 7|38w10 51r29 52r29 53r29 54r36 55r34
+X 3 interfac.ads
+74M9*Unsigned_32
+X 4 lsc.ads
+38K9*LSC 42e8 7|37r6 44r9 57r5
+X 5 lsc-internal.ads
+38K13*Internal 4|38k9 5|42e17 7|37r10 44r13 51r64 52r64 53r64 54r70 55r56
+. 57r9
+X 6 lsc-internal-aes.ads
+56K22*AES 181e21 7|37w19 51r73 52r73 53r73 54r79 55r65
+70A9*Key_Type(8|56M12)<8|50I9>
+76A12*AES128_Key_Type{70A9}<8|50I9> 7|51r77
+82A12*AES192_Key_Type{70A9}<8|50I9> 7|52r77
+88A12*AES256_Key_Type{70A9}<8|50I9> 7|53r77
+94A12*Block_Type{8|74A9}<8|50I9> 7|54r83 55r69
+X 7 lsc-internal-convert.ads
+41E9 Index_Type 43r29 46r38 46r58 46r74 46r90 47r38 47r58 47r74 47r90 48r38
+. 48r58 48r74 48r90 49r38 49r58 49r74 49r90
+42E9 Elem_Type 43r53
+43A9 Byte_Type(42E9)<41E9> 46r27 47r27 48r27 49r27
+44k22*Convert 5|38k13 7|41z9 42z9 43z9 57l18 57e25
+46A12*Key128_Type{43A9}<41E9> 51r51
+47A12*Key192_Type{43A9}<41E9> 52r51
+48A12*Key256_Type{43A9}<41E9> 53r51
+49A12*Block_Type{43A9}<41E9> 54r58 55r81
+51V13*K128[2|20]{6|70A9}
+52V13*K192[2|20]{6|70A9}
+53V13*K256[2|20]{6|70A9}
+54V13*To_Internal[2|20]{8|74A9}
+55V13*To_Public[2|20]{43A9}
+X 8 lsc-internal-types.ads
+56M12*Word32{3|74M9}
+74A9*Word32_Array_Type(56M12)<50I9>
+

@@ -1,0 +1,63 @@
+V "GNAT Lib v8"
+P ZX
+
+RN
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U lsc.sha1_generic%b	lsc-sha1_generic.adb	1c6f8b4f NE OO PK IU
+W lsc%s			lsc.ads			lsc.ali
+W lsc.internal%s	lsc-internal.ads	lsc-internal.ali
+W lsc.internal.convert_hash%s  lsc-internal-convert_hash.adb  lsc-internal-convert_hash.ali
+W lsc.internal.sha1%s	lsc-internal-sha1.adb	lsc-internal-sha1.ali
+
+U lsc.sha1_generic%s	lsc-sha1_generic.ads	3b270ffe BN EE NE OO PK IU
+W lsc%s			lsc.ads			lsc.ali
+
+D interfac.ads		00000000000000 5ab55268 interfaces%s
+D lsc.ads		00000000000000 51dd9bb7 lsc%s
+D lsc-internal.ads	00000000000000 c2d42930 lsc.internal%s
+D lsc-internal-convert_hash.ads  00000000000000 b2544208 lsc.internal.convert_hash%s
+D lsc-internal-sha1.ads	00000000000000 c9e5ebe7 lsc.internal.sha1%s
+D lsc-internal-types.ads  00000000000000 b0932367 lsc.internal.types%s
+D lsc-sha1_generic.ads	00000000000000 6afa9449 lsc.sha1_generic%s
+D lsc-sha1_generic.adb	00000000000000 0d24b6e9 lsc.sha1_generic%b
+D system.ads		00000000000000 b7b1312c system%s
+D /home/lypo/genodelabs/genode/contrib/libsparkcrypto-128833c0cc96fb90bae3f02a69d1ea03dbf55d78/libsparkcrypto/src/../build/pragmas.adc  00000000000000 00000000
+X 1 interfac.ads
+74M9*Unsigned_32
+X 2 lsc.ads
+38K9*LSC 42e8 7|37r9 48r5 8|37r6 38r6 40r14 68r5
+X 3 lsc-internal.ads
+38K13*Internal 42e17 8|37r10 38r10 48r37 56r11 57r11 58r11 59r11 60r11 61r11
+. 62r11 63r11
+X 4 lsc-internal-convert_hash.ads
+37K22*Convert_Hash 67e30 8|38w19 48r46
+65v13*Hash 8|48r59
+X 5 lsc-internal-sha1.ads
+50K22*SHA1 157e22 8|37w19 56r20 57r20 58r20 59r20 60r20 61r20 62r20 63r20
+55R9*Context_Type 152e14 8|56r25
+61A12*Block_Type{6|74A9}<6|50I9> 8|57r25
+70A12*Hash_Type{6|74A9}<6|50I9> 8|59r25
+73M12*Block_Length_Type{6|56M12} 8|58r25
+85V13*Context_Init{55R9} 8|60r25
+88U14*Context_Update 8|61r25
+95U14*Context_Finalize 8|62r25
+102V13*Get_Hash{70A12} 8|63r25
+X 6 lsc-internal-types.ads
+56M12*Word32{1|74M9}
+74A9*Word32_Array_Type(56M12)<50I9>
+X 7 lsc-sha1_generic.ads
+37K13*SHA1_Generic 2|38k9 7|48l9 48e21 8|40b18 68l9 68t21
+40E12 Message_Index_Type 42r35 8|50r11
+41E12 Message_Elem_Type 42r67 8|51r11
+42A12 Message_Type(41E12)<40E12> 46r29 8|46r29 52r11
+43E12 Hash_Index_Type 45r32 8|53r11
+44E12 Hash_Elem_Type 45r52 8|54r11
+45A12 Hash_Type(44E12)<43E12> 46r50 8|46r50 55r11
+46v13*Hash 46>19 8|46b13 66l8 66t12
+46*19 Message{42A12} 8|46b19 65r29
+X 8 lsc-sha1_generic.adb
+48V16 Hash_Internal[4|65]{7|45A12} 65s14
+

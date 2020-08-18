@@ -1,0 +1,101 @@
+V "GNAT Lib v8"
+P ZX
+
+RN
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U lsc.sha2_generic%b	lsc-sha2_generic.adb	cfd8548f NE OO PK IU
+W lsc%s			lsc.ads			lsc.ali
+W lsc.internal%s	lsc-internal.ads	lsc-internal.ali
+W lsc.internal.convert_hash%s  lsc-internal-convert_hash.adb  lsc-internal-convert_hash.ali
+W lsc.internal.sha256%s	lsc-internal-sha256.adb	lsc-internal-sha256.ali
+W lsc.internal.sha512%s	lsc-internal-sha512.adb	lsc-internal-sha512.ali
+
+U lsc.sha2_generic%s	lsc-sha2_generic.ads	91f885b6 BN NE OO PU PK IU
+W lsc%s			lsc.ads			lsc.ali
+
+D interfac.ads		00000000000000 5ab55268 interfaces%s
+D lsc.ads		00000000000000 51dd9bb7 lsc%s
+D lsc-internal.ads	00000000000000 c2d42930 lsc.internal%s
+D lsc-internal-convert_hash.ads  00000000000000 b2544208 lsc.internal.convert_hash%s
+D lsc-internal-sha256.ads  00000000000000 d139cadc lsc.internal.sha256%s
+D lsc-internal-sha512.ads  00000000000000 7c902fbe lsc.internal.sha512%s
+D lsc-internal-types.ads  00000000000000 b0932367 lsc.internal.types%s
+D lsc-sha2_generic.ads	00000000000000 c0251e01 lsc.sha2_generic%s
+D lsc-sha2_generic.adb	00000000000000 1000ede4 lsc.sha2_generic%b
+D system.ads		00000000000000 b7b1312c system%s
+D /home/lypo/genodelabs/genode/contrib/libsparkcrypto-128833c0cc96fb90bae3f02a69d1ea03dbf55d78/libsparkcrypto/src/../build/pragmas.adc  00000000000000 00000000
+X 1 interfac.ads
+74M9*Unsigned_32
+77M9*Unsigned_64
+X 2 lsc.ads
+38K9*LSC 42e8 8|37r9 68r5 9|37r6 38r6 39r6 41r14 121r5
+X 3 lsc-internal.ads
+38K13*Internal 42e17 9|37r10 38r10 39r10 49r37 57r11 58r11 59r11 60r11 61r11
+. 62r11 63r11 64r11 75r37 83r11 84r11 85r11 86r11 87r11 88r11 89r11 90r11
+. 101r37 109r11 110r11 111r11 112r11 113r11 114r11 115r11 116r11
+X 4 lsc-internal-convert_hash.ads
+37K22*Convert_Hash 67e30 9|39w19 49r46 75r46 101r46
+65v13*Hash 9|49r59 75r59 101r59
+X 5 lsc-internal-sha256.ads
+52K22*SHA256 159e24 9|37w19 57r20 58r20 59r20 60r20 61r20 62r20 63r20 64r20
+57R9*Context_Type 151e14 9|57r27
+63A12*Block_Type{7|74A9}<7|50I9> 9|58r27
+72A12*SHA256_Hash_Type{7|74A9}<7|50I9> 9|60r27
+75M12*Block_Length_Type{7|56M12} 9|59r27
+87V13*SHA256_Context_Init{57R9} 9|61r27
+90U14*Context_Update 9|62r27
+98U14*Context_Finalize 9|63r27
+105V13*SHA256_Get_Hash{72A12} 9|64r27
+X 6 lsc-internal-sha512.ads
+51K22*SHA512 188e24 9|38w19 83r20 84r20 85r20 86r20 87r20 88r20 89r20 90r20
+. 109r20 110r20 111r20 112r20 113r20 114r20 115r20 116r20
+56R9*Context_Type 177e14 9|83r27 109r27
+62A12*Block_Type{7|77A9}<7|50I9> 9|84r27 110r27
+71A12*SHA512_Hash_Type{7|77A9}<7|50I9> 9|112r27
+77A12*SHA384_Hash_Type{7|77A9}<7|50I9> 9|86r27
+80M12*Block_Length_Type{7|59M12} 9|85r27 111r27
+94V13*SHA512_Context_Init{56R9} 9|113r27
+97V13*SHA384_Context_Init{56R9} 9|87r27
+100U14*Context_Update 9|88r27 114r27
+109U14*Context_Finalize 9|89r27 115r27
+116V13*SHA512_Get_Hash{71A12} 9|116r27
+119V13*SHA384_Get_Hash{77A12} 9|90r27
+X 7 lsc-internal-types.ads
+56M12*Word32{1|74M9}
+59M12*Word64{1|77M9}
+74A9*Word32_Array_Type(56M12)<50I9>
+77A9*Word64_Array_Type(59M12)<50I9>
+X 8 lsc-sha2_generic.ads
+37K13*SHA2_Generic 2|38k9 8|68l9 68e21 9|41b18 121l9 121t21
+42E12 Message_Index_Type 44r35 9|51r11
+43E12 Message_Elem_Type 44r67 9|52r11
+44A12 Message_Type(43E12)<42E12> 48r36 9|47r36 53r11
+45E12 Hash_Index_Type 47r32 9|54r11
+46E12 Hash_Elem_Type 47r52 9|55r11
+47A12 Hash_Type(46E12)<45E12> 48r57 9|47r57 56r11
+48v13*Hash_SHA256 48>26 9|47b13 67l8 67t19
+48*26 Message{44A12} 9|47b26 66r29
+51E12 Message_Index_Type 53r35 9|77r11
+52E12 Message_Elem_Type 53r67 9|78r11
+53A12 Message_Type(52E12)<51E12> 57r36 9|73r36 79r11
+54E12 Hash_Index_Type 56r32 9|80r11
+55E12 Hash_Elem_Type 56r52 9|81r11
+56A12 Hash_Type(55E12)<54E12> 57r57 9|73r57 82r11
+57v13*Hash_SHA384 57>26 9|73b13 93l8 93t19
+57*26 Message{53A12} 9|73b26 92r29
+60E12 Message_Index_Type 62r35 9|103r11
+61E12 Message_Elem_Type 62r67 9|104r11
+62A12 Message_Type(61E12)<60E12> 66r36 9|99r36 105r11
+63E12 Hash_Index_Type 65r32 9|106r11
+64E12 Hash_Elem_Type 65r52 9|107r11
+65A12 Hash_Type(64E12)<63E12> 66r57 9|99r57 108r11
+66v13*Hash_SHA512 66>26 9|99b13 119l8 119t19
+66*26 Message{62A12} 9|99b26 118r29
+X 9 lsc-sha2_generic.adb
+49V16 Hash_Internal[4|65]{8|47A12} 66s14
+75V16 Hash_Internal[4|65]{8|56A12} 92s14
+101V16 Hash_Internal[4|65]{8|65A12} 118s14
+

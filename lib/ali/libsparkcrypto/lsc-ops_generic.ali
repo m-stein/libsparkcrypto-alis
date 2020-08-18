@@ -1,0 +1,55 @@
+V "GNAT Lib v8"
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_UNCHECKED_CONVERSION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U lsc.ops_generic%b	lsc-ops_generic.adb	18ac856a NE OO PK IU
+W ada%s			ada.ads			ada.ali
+W ada.unchecked_conversion%s
+W lsc%s			lsc.ads			lsc.ali
+N A62:10 gnatprove false_positive """Result"" might not be initialized" "Initialized in complete loop in ""Array_XOR"""
+N A69:7 gnatprove false_positive """Result"" might not be initialized" "Initialized in complete loop in ""Array_XOR"""
+
+U lsc.ops_generic%s	lsc-ops_generic.ads	513428b3 BN EE NE OO PK IU
+W lsc%s			lsc.ads			lsc.ali
+
+D ada.ads		00000000000000 76789da1 ada%s
+D a-unccon.ads		00000000000000 0e9b276f ada.unchecked_conversion%s
+D lsc.ads		00000000000000 51dd9bb7 lsc%s
+D lsc-ops_generic.ads	00000000000000 00e9b304 lsc.ops_generic%s
+D lsc-ops_generic.adb	00000000000000 16de1101 lsc.ops_generic%b
+D system.ads		00000000000000 b7b1312c system%s
+D /home/lypo/genodelabs/genode/contrib/libsparkcrypto-128833c0cc96fb90bae3f02a69d1ea03dbf55d78/libsparkcrypto/src/../build/pragmas.adc  00000000000000 00000000
+X 1 ada.ads
+16K9*Ada 20e8 5|37r6 51r29 52r29 53r31
+X 2 a-unccon.ads
+20v14*Unchecked_Conversion 5|37w10 51r33 52r33 53r35
+X 3 lsc.ads
+38K9*LSC 42e8 4|37r9 63r5 5|39r14 73r5
+X 4 lsc-ops_generic.ads
+37K13*Ops_Generic 3|38k9 4|63l9 63e20 5|39b18 73l9 73t20
+45E12 Left_Index_Type 47r37 5|59r35 59r56
+46E12 Left_Elem_Type 47r66 5|51r55
+47A12 Left_Data_Type(46E12)<45E12> 55r23 5|46r23
+48E12 Right_Index_Type 50r38 5|60r36 60r58
+49E12 Right_Elem_Type 50r68 5|52r55
+50A12 Right_Data_Type(49E12)<48E12> 56r23 5|47r23
+51E12 Result_Index_Type 53r39 5|58r18 58r41 66r15 66r38
+52E12 Result_Elem_Type 53r70 5|53r61
+53A12 Result_Data_Type(52E12)<51E12> 57r23 5|48r23
+54u14*Array_XOR 55>7 56>7 57<7 5|45b14 71l8 71t17
+55*7 Left{47A12} 60r9 61r26 5|46b7 56r21 59r29 59r77 66r77
+56*7 Right{50A12} 60r23 5|47b7 60r29 60r80
+57*7 Result{53A12} 61r9 5|48b7 58m10 58r64 66m7 66r61 66r93
+X 5 lsc-ops_generic.adb
+50M12 M8 51r71 52r72 53r57
+51V16 To_M8[2|20]{50M12} 59s22
+52V16 To_M8[2|20]{50M12} 60s22
+53V16 From_M8[2|20]{4|52E12} 59s13 67s24
+56i11 I{integer} 58r80 59r91 60r95
+

@@ -1,0 +1,178 @@
+V "GNAT Lib v8"
+P ZX
+
+RN
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U lsc.sha2.hmac_generic%b  lsc-sha2-hmac_generic.adb  cd81e1b3 NE OO PK IU
+W lsc%s			lsc.ads			lsc.ali
+W lsc.internal%s	lsc-internal.ads	lsc-internal.ali
+W lsc.internal.convert_hmac%s  lsc-internal-convert_hmac.adb  lsc-internal-convert_hmac.ali
+W lsc.internal.hmac_sha256%s  lsc-internal-hmac_sha256.adb  lsc-internal-hmac_sha256.ali
+W lsc.internal.hmac_sha384%s  lsc-internal-hmac_sha384.adb  lsc-internal-hmac_sha384.ali
+W lsc.internal.hmac_sha512%s  lsc-internal-hmac_sha512.adb  lsc-internal-hmac_sha512.ali
+W lsc.internal.sha256%s	lsc-internal-sha256.adb	lsc-internal-sha256.ali
+W lsc.internal.sha512%s	lsc-internal-sha512.adb	lsc-internal-sha512.ali
+W lsc.sha2%s		lsc-sha2.ads		lsc-sha2.ali
+W lsc.sha2_generic%s	lsc-sha2_generic.adb	lsc-sha2_generic.ali
+
+U lsc.sha2.hmac_generic%s  lsc-sha2-hmac_generic.ads  44ee2260 BN EE NE OO PK IU
+W lsc.sha2%s		lsc-sha2.ads		lsc-sha2.ali
+
+D interfac.ads		00000000000000 5ab55268 interfaces%s
+D lsc.ads		00000000000000 51dd9bb7 lsc%s
+D lsc-internal.ads	00000000000000 c2d42930 lsc.internal%s
+D lsc-internal-convert_hmac.ads  00000000000000 ff458049 lsc.internal.convert_hmac%s
+D lsc-internal-hmac_sha256.ads  00000000000000 d73aa77d lsc.internal.hmac_sha256%s
+D lsc-internal-hmac_sha384.ads  00000000000000 65b4f423 lsc.internal.hmac_sha384%s
+D lsc-internal-hmac_sha512.ads  00000000000000 a4edde08 lsc.internal.hmac_sha512%s
+D lsc-internal-sha256.ads  00000000000000 d139cadc lsc.internal.sha256%s
+D lsc-internal-sha512.ads  00000000000000 7c902fbe lsc.internal.sha512%s
+D lsc-internal-types.ads  00000000000000 b0932367 lsc.internal.types%s
+D lsc-sha2.ads		00000000000000 10e5d67b lsc.sha2%s
+D lsc-sha2-hmac_generic.ads  00000000000000 540bf41b lsc.sha2.hmac_generic%s
+D lsc-sha2-hmac_generic.adb  00000000000000 1d20e3d4 lsc.sha2.hmac_generic%b
+D lsc-sha2_generic.ads	00000000000000 c0251e01 lsc.sha2_generic%s
+D lsc-types.ads		00000000000000 6af59334 lsc.types%s
+D system.ads		00000000000000 b7b1312c system%s
+D /home/lypo/genodelabs/genode/contrib/libsparkcrypto-128833c0cc96fb90bae3f02a69d1ea03dbf55d78/libsparkcrypto/src/../build/pragmas.adc  00000000000000 00000000
+X 1 interfac.ads
+74M9*Unsigned_32
+77M9*Unsigned_64
+X 2 lsc.ads
+38K9*LSC 42e8 12|37r9 78r5 13|37r6 38r6 39r6 40r6 41r6 42r6 43r6 45r14 59r32
+. 100r32 143r32 174r5
+X 3 lsc-internal.ads
+38K13*Internal 42e17 13|37r10 38r10 39r10 40r10 41r10 42r10 63r37 64r41 75r41
+. 76r41 77r41 78r41 79r41 80r41 81r41 82r41 106r37 118r41 119r41 120r41 121r41
+. 122r41 123r41 124r41 125r41 149r37 161r41 162r41 163r41 164r41 165r41 166r41
+. 167r41 168r41
+X 4 lsc-internal-convert_hmac.ads
+37K22*Convert_HMAC 73e30 13|42w19 63r46 106r46 149r46
+40i7 Block_Len{natural} 13|64r11 107r11 150r11
+41i7 Hash_Len{natural} 13|65r11 108r11 151r11
+42E12 Key_Index_Type 13|66r11 109r11 152r11
+43E12 Key_Elem_Type 13|67r11 110r11 153r11
+44A12 Key_Type(43E12)<42E12> 13|68r11 111r11 154r11
+45E12 Message_Index_Type 13|69r11 112r11 155r11
+46E12 Message_Elem_Type 13|70r11 113r11 156r11
+47A12 Message_Type(46E12)<45E12> 13|71r11 114r11 157r11
+48E12 Hash_Index_Type 13|72r11 115r11 158r11
+49E12 Hash_Elem_Type 13|73r11 116r11 159r11
+50A12 Hash_Type(49E12)<48E12> 13|74r11 117r11 160r11
+51+12 Internal_Context_Type 13|75r11 118r11 161r11
+52+12 Internal_Block_Type 13|76r11 119r11 162r11
+53E12 Internal_Block_Length_Type 13|77r11 120r11 163r11
+54+12 Internal_Hash_Type 13|78r11 121r11 164r11
+56V21 Context_Init{51+12} 13|79r11 122r11 165r11
+58U22 Context_Update 13|80r11 123r11 166r11
+61U22 Context_Finalize 13|81r11 124r11 167r11
+65V21 Get_Auth{54+12} 13|82r11 125r11 168r11
+67V21 Hash_Key{44A12} 13|83r11 126r11 169r11
+69v13*HMAC_Generic 13|63r59 106r59 149r59
+X 5 lsc-internal-hmac_sha256.ads
+51K22*HMAC_SHA256 120e29 13|37w19 75r50 79r50 80r50 81r50 82r50
+56R9*Context_Type 118e14 13|75r62
+65V13*Context_Init{56R9} 13|79r62
+68U14*Context_Update 13|80r62
+76U14*Context_Finalize 13|81r62
+83V13*Get_Prf{8|72A12} 13|82r62
+X 6 lsc-internal-hmac_sha384.ads
+49K22*HMAC_SHA384 124e29 13|38w19 118r50 122r50 123r50 124r50 125r50
+54R9*Context_Type 119e14 13|118r62
+63V13*Context_Init{54R9} 13|122r62
+66U14*Context_Update 13|123r62
+74U14*Context_Finalize 13|124r62
+81V13*Get_Prf{9|77A12} 13|125r62
+X 7 lsc-internal-hmac_sha512.ads
+50K22*HMAC_SHA512 128e29 13|39w19 161r50 165r50 166r50 167r50 168r50
+55R9*Context_Type 123e14 13|161r62
+67V13*Context_Init{55R9} 13|165r62
+70U14*Context_Update 13|166r62
+78U14*Context_Finalize 13|167r62
+85V13*Get_Prf{9|71A12} 13|168r62
+X 8 lsc-internal-sha256.ads
+52K22*SHA256 159e24 13|40w19 64r50 76r50 77r50 78r50
+63A12*Block_Type{10|74A9}<10|50I9> 13|76r57
+66N4*Block_Size 13|64r57
+72A12*SHA256_Hash_Type{10|74A9}<10|50I9> 13|78r57
+75M12*Block_Length_Type{10|56M12} 13|77r57
+X 9 lsc-internal-sha512.ads
+51K22*SHA512 188e24 13|41w19 119r50 120r50 121r50 162r50 163r50 164r50
+62A12*Block_Type{10|77A9}<10|50I9> 13|119r57 162r57
+71A12*SHA512_Hash_Type{10|77A9}<10|50I9> 13|164r57
+77A12*SHA384_Hash_Type{10|77A9}<10|50I9> 13|121r57
+80M12*Block_Length_Type{10|59M12} 13|120r57 163r57
+X 10 lsc-internal-types.ads
+56M12*Word32{1|74M9}
+59M12*Word64{1|77M9}
+74A9*Word32_Array_Type(56M12)<50I9>
+77A9*Word64_Array_Type(59M12)<50I9>
+X 11 lsc-sha2.ads
+42K13*SHA2 2|38k9 11|64e13 12|37r13 78r9 13|45r18 174r9
+X 12 lsc-sha2-hmac_generic.ads
+37K18*HMAC_Generic 11|42k13 12|78l14 78e26 13|45b23 174l14 174t26
+40E12 Key_Index_Type 42r31 13|55r22 56r37 60r11 66r41
+41E12 Key_Elem_Type 42r59 13|60r27 61r31 67r41
+42A12 Key_Type(41E12)<40E12> 49r36 13|52r23 57r36 60r42 68r41
+43E12 Message_Index_Type 45r35 13|69r41
+44E12 Message_Elem_Type 45r67 13|70r41
+45A12 Message_Type(44E12)<43E12> 50r36 13|53r23 71r41
+46E12 Hash_Index_Type 48r32 13|72r41
+47E12 Hash_Elem_Type 48r52 13|73r41
+48A12 Hash_Type(47E12)<46E12> 50r57 13|53r44 74r41
+49v13*HMAC_SHA256 49>26 50>26 13|51b13 86l8 86t19
+49*26 Key{42A12} 13|52b7 85r29
+50*26 Message{45A12} 13|53b7 85r34
+53E12 Key_Index_Type 55r31 13|96r22 97r37 101r11 109r41
+54E12 Key_Elem_Type 55r59 13|101r27 102r31 110r41
+55A12 Key_Type(54E12)<53E12> 62r36 13|93r23 98r36 101r42 104r39 111r41
+56E12 Message_Index_Type 58r35 13|112r41
+57E12 Message_Elem_Type 58r67 13|113r41
+58A12 Message_Type(57E12)<56E12> 63r36 13|94r23 114r41
+59E12 Hash_Index_Type 61r32 13|115r41
+60E12 Hash_Elem_Type 61r52 13|116r41
+61A12 Hash_Type(60E12)<59E12> 63r57 13|94r44 117r41
+62v13*HMAC_SHA384 62>26 63>26 13|92b13 129l8 129t19
+62*26 Key{55A12} 13|93b7 128r29
+63*26 Message{58A12} 13|94b7 128r34
+66E12 Key_Index_Type 68r31 13|139r22 140r37 144r11 152r41
+67E12 Key_Elem_Type 68r59 13|144r27 145r31 153r41
+68A12 Key_Type(67E12)<66E12> 75r36 13|136r23 141r36 144r42 147r39 154r41
+69E12 Message_Index_Type 71r35 13|155r41
+70E12 Message_Elem_Type 71r67 13|156r41
+71A12 Message_Type(70E12)<69E12> 76r36 13|137r23 157r41
+72E12 Hash_Index_Type 74r32 13|158r41
+73E12 Hash_Elem_Type 74r52 13|159r41
+74A12 Hash_Type(73E12)<72E12> 76r57 13|137r44 160r41
+75v13*HMAC_SHA512 75>26 76>26 13|135b13 172l8 172t19
+75*26 Key{68A12} 13|136b7 171r29
+76*26 Message{71A12} 13|137b7 171r34
+X 13 lsc-sha2-hmac_generic.adb
+55E15 KIT{12|40E12} 56r58 56r71 56r80 56r89
+56E15 Internal_Key_Index{12|40E12} 57r46 61r11
+57A15 Internal_Key_Type{12|42A12}<12|40E12> 61r46
+59V16 Hash_Key[14|48]{12|42A12} 83r41
+63V16 HMAC_Internal[4|69]{12|48A12} 85s14
+96E15 KIT{12|53E12} 97r58 97r71 97r80 97r89
+97E15 Internal_Key_Index{12|53E12} 98r46 102r11
+98A15 Internal_Key_Type{12|55A12}<12|53E12> 102r46 104r56
+100V16 Hash_Key[14|57]{12|55A12} 104s78
+104V16 Hash_Key_SHA384{98A15} 104>33 126r41
+104*33 Key{12|55A12} 104r88
+106V16 HMAC_Internal[4|69]{12|61A12} 128s14
+139E15 KIT{12|66E12} 140r58 140r71 140r80 140r89
+140E15 Internal_Key_Index{12|66E12} 141r46 145r11
+141A15 Internal_Key_Type{12|68A12}<12|66E12> 145r46 147r56
+143V16 Hash_Key[14|66]{12|68A12} 147s78
+147V16 Hash_Key_SHA512{141A15} 147>33 169r41
+147*33 Key{12|68A12} 147r88
+149V16 HMAC_Internal[4|69]{12|74A12} 171s14
+X 14 lsc-sha2_generic.ads
+37K13*SHA2_Generic 13|43w10 59r36 100r36 143r36 14|68e21
+48v13*Hash_SHA256 13|59r49
+57v13*Hash_SHA384 13|100r49
+66v13*Hash_SHA512 13|143r49
+

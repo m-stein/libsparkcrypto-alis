@@ -1,0 +1,65 @@
+V "GNAT Lib v8"
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U lsc.internal.pad64%b	lsc-internal-pad64.adb	89a85b74 NE OO PK IU
+W interfaces%s		interfac.ads		interfac.ali
+W lsc%s			lsc.ads			lsc.ali
+W lsc.internal%s	lsc-internal.ads	lsc-internal.ali
+W lsc.internal.byteorder64%s  lsc-internal-byteorder64.adb  lsc-internal-byteorder64.ali
+
+U lsc.internal.pad64%s	lsc-internal-pad64.ads	12d40596 BN NE OO PU PK IU
+W lsc%s			lsc.ads			lsc.ali
+W lsc.internal%s	lsc-internal.ads	lsc-internal.ali
+W lsc.internal.types%s	lsc-internal-types.adb	lsc-internal-types.ali
+
+D interfac.ads		00000000000000 5ab55268 interfaces%s
+D lsc.ads		00000000000000 51dd9bb7 lsc%s
+D lsc-internal.ads	00000000000000 c2d42930 lsc.internal%s
+D lsc-internal-byteorder64.ads  00000000000000 0038fccd lsc.internal.byteorder64%s
+D lsc-internal-pad64.ads  00000000000000 60930fc1 lsc.internal.pad64%s
+D lsc-internal-pad64.adb  00000000000000 b3b6fa10 lsc.internal.pad64%b
+D lsc-internal-types.ads  00000000000000 b0932367 lsc.internal.types%s
+D system.ads		00000000000000 b7b1312c system%s
+D /home/lypo/genodelabs/genode/contrib/libsparkcrypto-128833c0cc96fb90bae3f02a69d1ea03dbf55d78/libsparkcrypto/src/../build/pragmas.adc  00000000000000 00000000
+X 1 interfac.ads
+38K9*Interfaces 184e15 6|35w6 57r24 58r24
+77M9*Unsigned_64
+141V13*Shift_Left{77M9} 6|57s35 58s35
+X 2 lsc.ads
+38K9*LSC 42e8 5|35r6 36r10 37r10 42r9 66r5 6|36r6 38r14 74r5
+X 3 lsc-internal.ads
+38K13*Internal 2|38k9 3|42e17 5|35r10 36r14 37r14 42r13 66r9 6|36r10 38r18
+. 74r9
+X 4 lsc-internal-byteorder64.ads
+40K22*Byteorder64 60e29 6|36w19 56r15 59r24
+45V13*Native_To_BE{7|59M12} 6|56s27
+53V13*BE_To_Native{7|59M12} 6|59s36
+X 5 lsc-internal-pad64.ads
+42K22*Pad64 3|38k13 5|66l18 66e23 6|38b27 74l18 74t23
+51U14*Block_Terminate 52=7 53>7 6|40b14 44r22 72l8 72t23
+52a7 Block{7|77A9} 59r20 61r29 64r13 64r60 64r75 6|41b7 51r16 56r41 59m7
+. 61r18 62r52 64m13 67r38 68r24
+53m7 Length{7|59M12} 59r30 61r10 64r40 6|42b7 51r43 54r31 68r51
+63i19 I<short_short_integer> 64r82
+X 6 lsc-internal-pad64.adb
+45m7 Temp{7|59M12} 56m7 57m7 57r15 58m7 58r15 59r50
+46i7 Index{7|50I9} 51m7 56r48 59r14 61r10 62r38 67r19 68r16
+47i7 Offset{natural} 54m7 57r54 58r50
+62i14 I<short_short_integer> 64r20 67r32
+66i25 P<short_short_integer> 67r45
+X 7 lsc-internal-types.ads
+43K22*Types 5|35w19 36r23 37r23 52r23 53r23 63r24 64r27 6|41r23 42r23 45r16
+. 46r16 51r30 62r19 66r30 68r38 7|95e23
+50I9*Index<short_short_integer> 5|37r29 63r30 64r33 6|46r22 51r36 62r25 66r36
+. 68r44
+59M12*Word64{1|77M9} 5|36r29 53r29 6|42r29 45r22
+77A9*Word64_Array_Type(59M12)<50I9> 5|52r29 6|41r29
+

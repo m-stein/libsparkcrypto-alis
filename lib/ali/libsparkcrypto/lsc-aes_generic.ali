@@ -1,0 +1,118 @@
+V "GNAT Lib v8"
+P ZX
+
+RN
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U lsc.aes_generic%b	lsc-aes_generic.adb	654b1943 NE OO PK IU
+W ada%s			ada.ads			ada.ali
+Z ada.unchecked_conversion%s
+W lsc%s			lsc.ads			lsc.ali
+W lsc.internal%s	lsc-internal.ads	lsc-internal.ali
+Z lsc.internal.aes%s	lsc-internal-aes.adb	lsc-internal-aes.ali
+W lsc.internal.convert%s  lsc-internal-convert.ads  lsc-internal-convert.ali
+
+U lsc.aes_generic%s	lsc-aes_generic.ads	dd5fea8d BN EE NE OO PK IU
+Z interfaces%s		interfac.ads		interfac.ali
+W lsc%s			lsc.ads			lsc.ali
+W lsc.internal%s	lsc-internal.ads	lsc-internal.ali
+W lsc.internal.aes%s	lsc-internal-aes.adb	lsc-internal-aes.ali
+
+D ada.ads		00000000000000 76789da1 ada%s
+D a-unccon.ads		00000000000000 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		00000000000000 5ab55268 interfaces%s
+D lsc.ads		00000000000000 51dd9bb7 lsc%s
+D lsc-aes_generic.ads	00000000000000 26ea5525 lsc.aes_generic%s
+D lsc-aes_generic.adb	00000000000000 29377281 lsc.aes_generic%b
+D lsc-internal.ads	00000000000000 c2d42930 lsc.internal%s
+D lsc-internal-aes.ads	00000000000000 aa68241f lsc.internal.aes%s
+D lsc-internal-convert.ads  00000000000000 6a963ee7 lsc.internal.convert%s
+D lsc-internal-types.ads  00000000000000 b0932367 lsc.internal.types%s
+D system.ads		00000000000000 b7b1312c system%s
+D /home/lypo/genodelabs/genode/contrib/libsparkcrypto-128833c0cc96fb90bae3f02a69d1ea03dbf55d78/libsparkcrypto/src/../build/pragmas.adc  00000000000000 00000000
+X 3 interfac.ads
+74M9*Unsigned_32
+X 4 lsc.ads
+38K9*LSC 42e8 5|37r14 39r9 121r5 6|37r6 39r14 44r30 59r30 74r25 75r25 85r25
+. 86r25 91r5
+X 5 lsc-aes_generic.ads
+39K13*AES_Generic 4|38k9 5|41E9 121l9 121e20 6|39b18 91l9 91t20
+41E9*Keylen_Type 41e42 44r33 58r31 68r31 105r33 6|42r31 57r31
+41n25*L128{41E9} 107r13 6|49r14 64r14
+41n31*L192{41E9} 108r13 6|50r14 65r14
+41n37*L256{41E9} 109r13 6|51r14 66r14
+44V13*Key_Bytes{natural} 44>24 60s25 70s25 105b13
+44e24 Keylen{41E9} 106r13
+50R9*Dec_Key_Type 58r51 81r35 111c9 114e14 6|42r51 72r35
+51R9*Enc_Key_Type 68r51 96r34 116c9 119e14 6|57r51 83r34
+54E12 Index_Type 56r31 6|44r52 49r69 49r85 50r69 50r85 51r69 51r85
+55E12 Elem_Type 56r55 6|44r64
+56A12 Key_Type(55E12)<54E12> 57r31 6|41r31 44r75
+57v13*Dec_Key 57>22 58>22 6|41b13 52l8 52t15
+57*22 K{56A12} 60r14 6|41b22 49r55 49r58 49r101 50r55 50r58 50r101 51r55
+. 51r58 51r101
+58e22 Keylen{41E9} 60r36 6|42b22 48r32
+64E12 Index_Type 66r31 6|59r52 64r69 64r85 65r69 65r85 66r69 66r85
+65E12 Elem_Type 66r55 6|59r64
+66A12 Key_Type(65E12)<64E12> 67r31 6|56r31 59r75
+67v13*Enc_Key 67>22 68>22 6|56b13 67l8 67t15
+67*22 K{66A12} 70r14 6|56b22 64r55 64r58 64r101 65r55 65r58 65r101 66r55
+. 66r58 66r101
+68e22 Keylen{41E9} 70r36 6|57b22 63r32
+74E12 Plaintext_Index_Type 76r37 6|74r47
+75E12 Plaintext_Elem_Type 76r71 6|74r69
+76A12 Plaintext_Type(75E12)<74E12> 81r56 6|72r56 74r90
+77E12 Ciphertext_Index_Type 79r38 6|75r47
+78E12 Ciphertext_Elem_Type 79r73 6|75r70
+79A12 Ciphertext_Type(78E12)<77E12> 80r35 6|71r35 75r92
+80v13*Decrypt 80>22 81>22 84r15 6|71b13 78l8 78t15
+80*22 Ciphertext{79A12} 83r15 6|71b22 77r79
+81r22 Key{50R9} 6|72b22 77r50
+89E12 Plaintext_Index_Type 91r37 6|86r47
+90E12 Plaintext_Elem_Type 91r71 6|86r69
+91A12 Plaintext_Type(90E12)<89E12> 95r34 6|82r34 86r90
+92E12 Ciphertext_Index_Type 94r38 6|85r47
+93E12 Ciphertext_Elem_Type 94r73 6|85r70
+94A12 Ciphertext_Type(93E12)<92E12> 96r55 6|83r55 85r92
+95v13*Encrypt 95>22 96>22 99r15 6|82b13 89l8 89t15
+95*22 Plaintext{91A12} 98r15 6|82b22 88r79
+96r22 Key{51R9} 6|83b22 88r50
+113r7*Context{8|64R9} 6|48m15 77r54
+118r7*Context{8|61R9} 6|63m15 88r54
+X 6 lsc-aes_generic.adb
+44K15 Convert[9|44] 45r11
+59K15 Convert[9|44] 60r11
+74K15 CP[9|44] 77r14
+75K15 CI[9|44] 77r63
+85K15 CP[9|44] 88r14
+86K15 CI[9|44] 88r63
+X 7 lsc-internal.ads
+38K13*Internal 5|37r18 113r17 118r17 6|37r10 44r34 46r11 59r34 61r11 74r29
+. 75r29 77r28 85r29 86r29 88r28 7|42e17
+X 8 lsc-internal-aes.ads
+56K22*AES 5|37w27 113r26 118r26 6|46r20 61r20 77r37 88r37 8|181e21
+61R9*AES_Enc_Context 5|118r30 8|161e14
+64R9*AES_Dec_Context 5|113r30 8|167e14
+70A9*Key_Type(10|56M12)<10|50I9>
+94A12*Block_Type{10|74A9}<10|50I9>
+103V13*Create_AES128_Enc_Context{61R9} 6|64s22
+106V13*Create_AES192_Enc_Context{61R9} 6|65s22
+109V13*Create_AES256_Enc_Context{61R9} 6|66s22
+113V13*Encrypt{94A12} 6|88s41
+118V13*Create_AES128_Dec_Context{64R9} 6|49s22
+121V13*Create_AES192_Dec_Context{64R9} 6|50s22
+124V13*Create_AES256_Dec_Context{64R9} 6|51s22
+128V13*Decrypt{94A12} 6|77s41
+X 9 lsc-internal-convert.ads
+44k22*Convert 6|37w19 44r43 59r43 74r38 75r38 85r38 86r38 9|57e25
+51V13 K128[2|20]{8|70A9} 6|49s49[44] 64s49[59]
+52V13 K192[2|20]{8|70A9} 6|50s49[44] 65s49[59]
+53V13 K256[2|20]{8|70A9} 6|51s49[44] 66s49[59]
+54V13 To_Internal[2|20]{10|74A9} 6|77s66[75] 88s66[86]
+55V13 To_Public[2|20]{5|76A12} 6|77s17[74] 88s17[85]
+X 10 lsc-internal-types.ads
+56M12*Word32{3|74M9}
+74A9*Word32_Array_Type(56M12)<50I9>
+

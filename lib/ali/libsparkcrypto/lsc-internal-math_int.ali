@@ -1,0 +1,38 @@
+V "GNAT Lib v8"
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U lsc.internal.math_int%s  lsc-internal-math_int.ads  7007b07e NE OO PU PK IU
+W lsc%s			lsc.ads			lsc.ali
+W lsc.internal%s	lsc-internal.ads	lsc-internal.ali
+W lsc.internal.types%s	lsc-internal-types.adb	lsc-internal-types.ali
+
+D interfac.ads		00000000000000 5ab55268 interfaces%s
+D lsc.ads		00000000000000 51dd9bb7 lsc%s
+D lsc-internal.ads	00000000000000 c2d42930 lsc.internal%s
+D lsc-internal-math_int.ads  00000000000000 0240ba29 lsc.internal.math_int%s
+D lsc-internal-types.ads  00000000000000 b0932367 lsc.internal.types%s
+D system.ads		00000000000000 b7b1312c system%s
+D /home/lypo/genodelabs/genode/contrib/libsparkcrypto-128833c0cc96fb90bae3f02a69d1ea03dbf55d78/libsparkcrypto/src/../build/pragmas.adc  00000000000000 00000000
+X 1 interfac.ads
+74M9*Unsigned_32
+77M9*Unsigned_64
+X 2 lsc.ads
+38K9*LSC 42e8 4|1r6 3r9 60r5
+X 3 lsc-internal.ads
+38K13*Internal 2|38k9 3|42e17 4|1r10 3r13 60r9
+X 4 lsc-internal-math_int.ads
+3K22*Math_Int 3|38k13 4|59E9 60l18 60e26
+9I9*Math_Int<integer> 11r22 11r36 11r53 14r22 14r36 14r53 17r22 17r36 17r53
+. 20r22 20r36 20r53 23r24 23r38 23r55 26r23 26r53 29r23 29r37 29r54 32r22
+. 32r36 35r22 35r36 38r22 38r36 41r23 41r37 44r23 44r37 47r47 50r51 53r51
+. 59c9
+X 5 lsc-internal-types.ads
+43K22*Types 4|1w19 50r30 53r30 5|95e23
+56M12*Word32{1|74M9} 4|50r36
+59M12*Word64{1|77M9} 4|53r36
+

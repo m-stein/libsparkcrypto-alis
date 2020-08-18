@@ -1,0 +1,85 @@
+V "GNAT Lib v8"
+P ZX
+
+RN
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U lsc.sha2.hmac%s	lsc-sha2-hmac.ads	fd532918 NE OO PK IU
+Z interfaces%s		interfac.ads		interfac.ali
+W lsc%s			lsc.ads			lsc.ali
+W lsc.sha2%s		lsc-sha2.ads		lsc-sha2.ali
+W lsc.sha2.hmac_generic%s  lsc-sha2-hmac_generic.adb  lsc-sha2-hmac_generic.ali  EA
+W lsc.types%s		lsc-types.ads		lsc-types.ali
+Z system.arith_64%s	s-arit64.adb		s-arit64.ali
+
+D ada.ads		00000000000000 76789da1 ada%s
+D a-unccon.ads		00000000000000 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		00000000000000 5ab55268 interfaces%s
+D lsc.ads		00000000000000 51dd9bb7 lsc%s
+D lsc-internal.ads	00000000000000 c2d42930 lsc.internal%s
+D lsc-internal-convert_hash.ads  00000000000000 b2544208 lsc.internal.convert_hash%s
+D lsc-internal-convert_hash.adb  00000000000000 052e9dcb lsc.internal.convert_hash%b
+D lsc-internal-convert_hmac.ads  00000000000000 ff458049 lsc.internal.convert_hmac%s
+D lsc-internal-convert_hmac.adb  00000000000000 9b04eb05 lsc.internal.convert_hmac%b
+D lsc-internal-hmac_sha256.ads  00000000000000 d73aa77d lsc.internal.hmac_sha256%s
+D lsc-internal-hmac_sha384.ads  00000000000000 65b4f423 lsc.internal.hmac_sha384%s
+D lsc-internal-hmac_sha512.ads  00000000000000 a4edde08 lsc.internal.hmac_sha512%s
+D lsc-internal-sha256.ads  00000000000000 d139cadc lsc.internal.sha256%s
+D lsc-internal-sha512.ads  00000000000000 7c902fbe lsc.internal.sha512%s
+D lsc-internal-types.ads  00000000000000 b0932367 lsc.internal.types%s
+D lsc-sha2.ads		00000000000000 10e5d67b lsc.sha2%s
+D lsc-sha2-hmac.ads	00000000000000 c3ad4e37 lsc.sha2.hmac%s
+D lsc-sha2-hmac_generic.ads  00000000000000 540bf41b lsc.sha2.hmac_generic%s
+D lsc-sha2-hmac_generic.adb  00000000000000 1d20e3d4 lsc.sha2.hmac_generic%b
+D lsc-sha2_generic.ads	00000000000000 c0251e01 lsc.sha2_generic%s
+D lsc-sha2_generic.adb	00000000000000 1000ede4 lsc.sha2_generic%b
+D lsc-types.ads		00000000000000 6af59334 lsc.types%s
+D system.ads		00000000000000 b7b1312c system%s
+D s-arit64.ads		00000000000000 a9f12339 system.arith_64%s
+D /home/lypo/genodelabs/genode/contrib/libsparkcrypto-128833c0cc96fb90bae3f02a69d1ea03dbf55d78/libsparkcrypto/src/../build/pragmas.adc  00000000000000 00000000
+X 3 interfac.ads
+55I9*Integer_64<long_long_integer>
+X 4 lsc.ads
+38K9*LSC 42e8 17|37r6 38r6 39r6 43r9 60r5
+X 16 lsc-sha2.ads
+42K13*SHA2 4|38k9 16|64e13 17|37w10 38r10 43r13 45r32 48r8 48r44 50r32 53r8
+. 53r44 55r32 58r8 58r44 60r9
+44I12*SHA256_Hash_Index{22|42I12} 17|48r13
+45A12*SHA256_Hash_Type{22|45A9}<integer> 17|48r49
+51I12*SHA384_Hash_Index{22|42I12} 17|53r13
+52A12*SHA384_Hash_Type{22|45A9}<integer> 17|53r49
+58I12*SHA512_Hash_Index{22|42I12} 17|58r13
+59A12*SHA512_Hash_Type{22|45A9}<integer> 17|58r49
+X 17 lsc-sha2-hmac.ads
+43K18*HMAC 16|42k13 17|60l14 60e18
+45V13*HMAC_SHA256[18|49]{22|45A9} 19|51b13
+50V13*HMAC_SHA384[18|62]{22|45A9} 19|92b13
+55V13*HMAC_SHA512[18|75]{22|45A9} 19|135b13
+X 18 lsc-sha2-hmac_generic.ads
+37K18*HMAC_Generic 17|38w15 41r32 45r37 50r37 55r37 18|78e26
+49v13*HMAC_SHA256 17|45r50
+62v13*HMAC_SHA384 17|50r50
+75v13*HMAC_SHA512 17|55r50
+X 19 lsc-sha2-hmac_generic.adb
+59V16 Hash_Key[20|48]{22|45A9} 21|47b13[17|45]
+63V16 HMAC_Internal[8|69]{22|45A9} 9|41b13[17|45]
+100V16 Hash_Key[20|57]{22|45A9} 21|73b13[17|50]
+106V16 HMAC_Internal[8|69]{22|45A9} 9|41b13[17|50]
+143V16 Hash_Key[20|66]{22|45A9} 21|99b13[17|55]
+149V16 HMAC_Internal[8|69]{22|45A9} 9|41b13[17|55]
+X 21 lsc-sha2_generic.adb
+49V16 Hash_Internal[6|65]{22|45A9} 7|41b13[19|59[17|45]]
+75V16 Hash_Internal[6|65]{22|45A9} 7|41b13[19|100[17|50]]
+101V16 Hash_Internal[6|65]{22|45A9} 7|41b13[19|143[17|55]]
+X 22 lsc-types.ads
+37K13*Types 17|39w10 46r8 46r29 46r41 47r8 47r29 47r41 48r32 51r8 51r29 51r41
+. 52r8 52r29 52r41 53r32 56r8 56r29 56r41 57r8 57r29 57r41 58r32 22|47e14
+39M9*Byte 17|46r35 47r35 48r38 51r35 52r35 53r38 56r35 57r35 58r38
+42I12*Natural_Index{natural} 17|46r14 47r14 51r14 52r14 56r14 57r14
+45A9*Bytes(39M9)<integer> 17|46r47 47r47 51r47 52r47 56r47 57r47
+X 24 s-arit64.ads
+56I12*Int64{3|55I9}
+78V13*Multiply_With_Ovflo_Check{56I12} 79i<c,__gnat_mulv64>22
+

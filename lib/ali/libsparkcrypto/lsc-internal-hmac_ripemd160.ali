@@ -1,0 +1,106 @@
+V "GNAT Lib v8"
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U lsc.internal.hmac_ripemd160%b  lsc-internal-hmac_ripemd160.adb  618a8901 NE OO PK IU
+W lsc%s			lsc.ads			lsc.ali
+W lsc.internal%s	lsc-internal.ads	lsc-internal.ali
+W lsc.internal.debug%s	lsc-internal-debug.ads	lsc-internal-debug.ali
+W lsc.internal.ops32%s	lsc-internal-ops32.adb	lsc-internal-ops32.ali
+
+U lsc.internal.hmac_ripemd160%s  lsc-internal-hmac_ripemd160.ads  b3932b44 BN NE OO PU PK IU
+W lsc%s			lsc.ads			lsc.ali
+W lsc.internal%s	lsc-internal.ads	lsc-internal.ali
+W lsc.internal.ripemd160%s  lsc-internal-ripemd160.adb  lsc-internal-ripemd160.ali
+W lsc.internal.types%s	lsc-internal-types.adb	lsc-internal-types.ali
+
+D interfac.ads		00000000000000 5ab55268 interfaces%s
+D lsc.ads		00000000000000 51dd9bb7 lsc%s
+D lsc-internal.ads	00000000000000 c2d42930 lsc.internal%s
+D lsc-internal-debug.ads  00000000000000 808547b5 lsc.internal.debug%s
+D lsc-internal-hmac_ripemd160.ads  00000000000000 4d66d5da lsc.internal.hmac_ripemd160%s
+D lsc-internal-hmac_ripemd160.adb  00000000000000 da5782bf lsc.internal.hmac_ripemd160%b
+D lsc-internal-io.ads	00000000000000 54473c0e lsc.internal.io%s
+D lsc-internal-ops32.ads  00000000000000 763e99d1 lsc.internal.ops32%s
+D lsc-internal-ripemd160.ads  00000000000000 8cb2f4c9 lsc.internal.ripemd160%s
+D lsc-internal-types.ads  00000000000000 b0932367 lsc.internal.types%s
+D system.ads		00000000000000 b7b1312c system%s
+D /home/lypo/genodelabs/genode/contrib/libsparkcrypto-128833c0cc96fb90bae3f02a69d1ea03dbf55d78/libsparkcrypto/src/../build/pragmas.adc  00000000000000 00000000
+X 1 interfac.ads
+74M9*Unsigned_32
+77M9*Unsigned_64
+X 2 lsc.ads
+38K9*LSC 42e8 5|35r6 35r30 37r10 38r10 51r9 102r5 6|35r6 36r6 39r14 127r5
+X 3 lsc-internal.ads
+38K13*Internal 2|38k9 3|42e17 5|35r10 35r34 37r14 38r14 51r13 102r9 6|35r10
+. 36r10 39r18 127r9
+X 4 lsc-internal-debug.ads
+38K22*Debug 85e23 6|36w19 37r35
+X 5 lsc-internal-hmac_ripemd160.ads
+51K22*HMAC_RIPEMD160 3|38k13 5|97E9 102l18 102e32 6|39b27 127l18 127t32
+56R9*Context_Type 59r62 63r24 73r24 80r36 97c9 100e14 6|48r62 49r16 64r24
+. 75r24 94r24 106r36 118r18
+59V13*Context_Init{56R9} 59>27 6|48b13 59l8 59t20 120s19
+59a27 Key{9|67A12} 6|48b27 54r32
+62U14*Context_Update 63=7 64>7 67r19 6|63b14 70l8 70t22
+63r7 Context{56R9} 66r20 6|64b7 69m33 69r33
+64a7 Block{9|67A12} 66r32 6|65b7 69r60
+72U14*Context_Finalize 73=7 74>7 75>7 77r19 6|93b14 102l8 102t24
+73r7 Context{56R9} 76r23 6|94b7 100m35 100r35 101m31
+74a7 Block{9|67A12} 76r36 6|95b7 100r62
+75m7 Length{9|79M12} 76r43 6|96b7 100r69
+80V13*Get_Auth{9|76A12} 80>23 6|106b13 109l8 109t16 124s14
+80r23 Context{56R9} 6|106b23 108r34
+85V13*Authenticate{9|76A12} 86>8 87>8 88>8 6|113b13 125l8 125t20
+86a8 Key{9|67A12} 6|114b8 120r33
+87a8 Message{9|88A9} 91r10 91r27 93r68 6|115b8 121r31
+88m8 Length{10|59M12} 92r10 93r14 6|116b8 121r40
+98r7*RIPEMD160_Context{9|61R9} 6|55m14 57m40 69m41 81r43 83m15 85m41 88m43
+. 100m43 108r42 121m57
+99a7*Key{9|67A12} 6|54m14 56r37 84r38
+X 6 lsc-internal-hmac_ripemd160.adb
+41a4 IPad{9|67A12} 56r24
+43a4 OPad{9|67A12} 84r24
+49r7 Result{5|56R9} 54m7 55m7 56r30 57m33 57r33 58r14
+50a7 Temp{9|67A12} 56m42 57r59
+74U14 Context_Finalize_Outer 74b14 75=7 89l8 89t30 101s7 122s7
+75r7 Context{5|56R9} 76r23 76r34 81r35 83m7 84r30 85m33 85r33 88m35 88r35
+78a7 Hash{9|76A12} 81m7 87r25
+79a7 Temp{9|67A12} 84m43 85r60 86m7 87m31 87r31 88r62
+118r7 HMAC_Ctx{5|56R9} 120m7 121m48 121r48 122m31 122r31 124r24
+X 8 lsc-internal-ops32.ads
+42K22*Ops32 6|35w19 56r7 84r7 87r7 8|134e23
+101U14*Block_XOR 6|56s13 84s13
+120U14*Block_Copy 6|87s13
+X 9 lsc-internal-ripemd160.ads
+56K22*RIPEMD160 5|35w19 59r33 64r24 74r24 75r24 80r57 86r18 87r18 88r39 92r19
+. 93r25 98r27 99r27 6|41r20 42r7 42r29 43r20 44r7 44r29 48r33 50r16 55r35
+. 57r7 65r20 69r7 78r14 79r14 81r15 83r36 85r7 86r15 88r7 95r24 96r24 100r7
+. 106r57 108r14 114r18 115r18 116r39 121r7 9|152e27
+61R9*Context_Type 5|98r37 9|147e14
+64I12*Block_Index{10|50I9} 6|42r39 44r39
+67A12*Block_Type{10|74A9}<10|50I9> 5|59r43 64r34 74r34 86r28 99r37 6|41r30
+. 42r17 43r30 44r17 48r43 50r26 65r30 79r24 95r34 114r28
+70N4*Block_Size 5|92r29 93r35
+76A12*Hash_Type{10|74A9}<10|50I9> 5|80r67 88r49 6|78r24 106r67 116r49
+79M12*Block_Length_Type{10|56M12} 5|75r34 6|96r34
+88A9*Message_Type(67A12)<1|77M9> 5|87r28 6|115r28
+91V13*Context_Init{61R9} 6|55s45 83s46
+94U14*Context_Update 6|57s17 69s17 85s17
+101U14*Context_Finalize 6|88s17 100s17
+108V13*Get_Hash{76A12} 6|81s25 108s24
+110U14*Hash_Context 6|121s17
+132a4*Null_Block{67A12} 6|86r25
+X 10 lsc-internal-types.ads
+43K22*Types 5|35w43 37r23 38r23 88r18 6|116r18 10|95e23
+50I9*Index<short_short_integer>
+56M12*Word32{1|74M9} 5|37r29
+59M12*Word64{1|77M9} 5|38r29 88r24 6|116r24
+74A9*Word32_Array_Type(56M12)<50I9>
+

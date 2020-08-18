@@ -1,0 +1,35 @@
+V "GNAT Lib v8"
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U lsc.internal.sha512.tables%s  lsc-internal-sha512-tables.ads  38f1880b NE OO PU PK IU
+W lsc%s			lsc.ads			lsc.ali
+W lsc.internal%s	lsc-internal.ads	lsc-internal.ali
+W lsc.internal.sha512%s	lsc-internal-sha512.adb	lsc-internal-sha512.ali
+
+D interfac.ads		00000000000000 5ab55268 interfaces%s
+D lsc.ads		00000000000000 51dd9bb7 lsc%s
+D lsc-internal.ads	00000000000000 c2d42930 lsc.internal%s
+D lsc-internal-sha512.ads  00000000000000 7c902fbe lsc.internal.sha512%s
+D lsc-internal-sha512-tables.ads  00000000000000 38f1880b lsc.internal.sha512.tables%s
+D lsc-internal-types.ads  00000000000000 b0932367 lsc.internal.types%s
+D system.ads		00000000000000 b7b1312c system%s
+D /home/lypo/genodelabs/genode/contrib/libsparkcrypto-128833c0cc96fb90bae3f02a69d1ea03dbf55d78/libsparkcrypto/src/../build/pragmas.adc  00000000000000 00000000
+X 1 interfac.ads
+77M9*Unsigned_64
+X 2 lsc.ads
+38K9*LSC 42e8 5|35r6 40r17 66r5
+X 3 lsc-internal.ads
+38K13*Internal 2|38k9 3|42e17 5|35r10 40r21 66r9
+X 4 lsc-internal-sha512.ads
+51K22*SHA512 3|38k13 4|188e24 5|35w19 40r30 44r17 44r41 66r18
+169A12 Schedule_Type{6|77A9}<6|50I9> 5|44r24 44r48
+X 5 lsc-internal-sha512-tables.ads
+40K37*Tables 4|51k22 5|66l25 66e31
+44a4*K{4|169A12}
+X 6 lsc-internal-types.ads
+59M12*Word64{1|77M9}
+77A9*Word64_Array_Type(59M12)<50I9>
+

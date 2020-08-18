@@ -1,0 +1,50 @@
+V "GNAT Lib v8"
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U lsc.internal.byteorder32%b  lsc-internal-byteorder32.adb  d5a71512 NE OO PK IU
+W lsc%s			lsc.ads			lsc.ali
+W lsc.internal%s	lsc-internal.ads	lsc-internal.ali
+W lsc.internal.byteswap32%s  lsc-internal-byteswap32.adb  lsc-internal-byteswap32.ali
+
+U lsc.internal.byteorder32%s  lsc-internal-byteorder32.ads  4780fc53 BN NE OO PU PK IU
+W lsc%s			lsc.ads			lsc.ali
+W lsc.internal%s	lsc-internal.ads	lsc-internal.ali
+W lsc.internal.types%s	lsc-internal-types.adb	lsc-internal-types.ali
+
+D interfac.ads		00000000000000 5ab55268 interfaces%s
+D lsc.ads		00000000000000 51dd9bb7 lsc%s
+D lsc-internal.ads	00000000000000 c2d42930 lsc.internal%s
+D lsc-internal-byteorder32.ads  00000000000000 35c7f604 lsc.internal.byteorder32%s
+D lsc-internal-byteorder32.adb  00000000000000 3f44e2b8 lsc.internal.byteorder32%b
+D lsc-internal-byteswap32.ads  00000000000000 df2401ae lsc.internal.byteswap32%s
+D lsc-internal-types.ads  00000000000000 b0932367 lsc.internal.types%s
+D system.ads		00000000000000 b7b1312c system%s
+D /home/lypo/genodelabs/genode/contrib/libsparkcrypto-128833c0cc96fb90bae3f02a69d1ea03dbf55d78/libsparkcrypto/src/../build/pragmas.adc  00000000000000 00000000
+X 1 interfac.ads
+74M9*Unsigned_32
+X 2 lsc.ads
+38K9*LSC 42e8 4|35r6 40r9 60r5 5|35r6 37r14 69r5
+X 3 lsc-internal.ads
+38K13*Internal 2|38k9 3|42e17 4|35r10 40r13 60r9 5|35r10 37r18 69r9
+X 4 lsc-internal-byteorder32.ads
+40K22*Byteorder32 3|38k13 4|60l18 60e29 5|37b27 69l18 69t29
+45V13*Native_To_BE{7|56M12} 45>27 46r19 5|39b13 43l8 43t20
+45m27 Item{7|56M12} 5|39b27 42r31
+49V13*Native_To_LE{7|56M12} 49>27 50r19 5|47b13 51l8 51t20
+49m27 Item{7|56M12} 5|47b27 50r14
+53V13*BE_To_Native{7|56M12} 53>27 54r19 5|55b13 59l8 59t20
+53m27 Item{7|56M12} 5|55b27 58r31
+57V13*LE_To_Native{7|56M12} 57>27 58r19 5|63b13 67l8 67t20
+57m27 Item{7|56M12} 5|63b27 66r14
+X 6 lsc-internal-byteswap32.ads
+40K22*Byteswap32 5|35w19 42r14 58r14 6|50e28
+47V13*Swap{7|56M12} 5|42s25 58s25
+X 7 lsc-internal-types.ads
+43K22*Types 4|35w19 45r34 45r55 49r34 49r55 53r34 53r55 57r34 57r55 5|39r34
+. 39r55 47r34 47r55 55r34 55r55 63r34 63r55 7|95e23
+56M12*Word32{1|74M9} 4|45r40 45r61 49r40 49r61 53r40 53r61 57r40 57r61 5|39r40
+. 39r61 47r40 47r61 55r40 55r61 63r40 63r61
+

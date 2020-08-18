@@ -1,0 +1,105 @@
+V "GNAT Lib v8"
+P ZX
+
+RN
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U lsc.ripemd160.hmac_generic%b  lsc-ripemd160-hmac_generic.adb  4e0055af NE OO PK IU
+W lsc%s			lsc.ads			lsc.ali
+W lsc.internal%s	lsc-internal.ads	lsc-internal.ali
+W lsc.internal.convert_hmac%s  lsc-internal-convert_hmac.adb  lsc-internal-convert_hmac.ali
+W lsc.internal.hmac_ripemd160%s  lsc-internal-hmac_ripemd160.adb  lsc-internal-hmac_ripemd160.ali
+W lsc.internal.ripemd160%s  lsc-internal-ripemd160.adb  lsc-internal-ripemd160.ali
+W lsc.ripemd160%s	lsc-ripemd160.ads	lsc-ripemd160.ali
+W lsc.ripemd160_generic%s  lsc-ripemd160_generic.adb  lsc-ripemd160_generic.ali
+
+U lsc.ripemd160.hmac_generic%s  lsc-ripemd160-hmac_generic.ads  37c87e67 BN EE NE OO PK IU
+W lsc.ripemd160%s	lsc-ripemd160.ads	lsc-ripemd160.ali
+
+D interfac.ads		00000000000000 5ab55268 interfaces%s
+D lsc.ads		00000000000000 51dd9bb7 lsc%s
+D lsc-internal.ads	00000000000000 c2d42930 lsc.internal%s
+D lsc-internal-convert_hmac.ads  00000000000000 ff458049 lsc.internal.convert_hmac%s
+D lsc-internal-hmac_ripemd160.ads  00000000000000 4d66d5da lsc.internal.hmac_ripemd160%s
+D lsc-internal-ripemd160.ads  00000000000000 8cb2f4c9 lsc.internal.ripemd160%s
+D lsc-internal-types.ads  00000000000000 b0932367 lsc.internal.types%s
+D lsc-ripemd160.ads	00000000000000 6918b506 lsc.ripemd160%s
+D lsc-ripemd160-hmac_generic.ads  00000000000000 5ed0cb61 lsc.ripemd160.hmac_generic%s
+D lsc-ripemd160-hmac_generic.adb  00000000000000 d64033ff lsc.ripemd160.hmac_generic%b
+D lsc-ripemd160_generic.ads  00000000000000 f8010c6b lsc.ripemd160_generic%s
+D lsc-types.ads		00000000000000 6af59334 lsc.types%s
+D system.ads		00000000000000 b7b1312c system%s
+D /home/lypo/genodelabs/genode/contrib/libsparkcrypto-128833c0cc96fb90bae3f02a69d1ea03dbf55d78/libsparkcrypto/src/../build/pragmas.adc  00000000000000 00000000
+X 1 interfac.ads
+74M9*Unsigned_32
+X 2 lsc.ads
+38K9*LSC 42e8 9|37r9 52r5 10|37r6 38r6 39r6 40r6 42r14 56r32 85r5
+X 3 lsc-internal.ads
+38K13*Internal 42e17 10|38r10 39r10 40r10 60r37 72r41 73r41 74r41 75r41 76r41
+. 77r41 78r41 79r41
+X 4 lsc-internal-convert_hmac.ads
+37K22*Convert_HMAC 73e30 10|40w19 60r46
+40i7 Block_Len{natural} 10|61r11
+41i7 Hash_Len{natural} 10|62r11
+42E12 Key_Index_Type 10|63r11
+43E12 Key_Elem_Type 10|64r11
+44A12 Key_Type(43E12)<42E12> 10|65r11
+45E12 Message_Index_Type 10|66r11
+46E12 Message_Elem_Type 10|67r11
+47A12 Message_Type(46E12)<45E12> 10|68r11
+48E12 Hash_Index_Type 10|69r11
+49E12 Hash_Elem_Type 10|70r11
+50A12 Hash_Type(49E12)<48E12> 10|71r11
+51+12 Internal_Context_Type 10|72r11
+52+12 Internal_Block_Type 10|73r11
+53E12 Internal_Block_Length_Type 10|74r11
+54+12 Internal_Hash_Type 10|75r11
+56V21 Context_Init{51+12} 10|76r11
+58U22 Context_Update 10|77r11
+61U22 Context_Finalize 10|78r11
+65V21 Get_Auth{54+12} 10|79r11
+67V21 Hash_Key{44A12} 10|80r11
+69v13*HMAC_Generic 10|60r59
+X 5 lsc-internal-hmac_ripemd160.ads
+51K22*HMAC_RIPEMD160 102e32 10|39w19 72r50 76r50 77r50 78r50 79r50
+56R9*Context_Type 100e14 10|72r65
+59V13*Context_Init{56R9} 10|76r65
+62U14*Context_Update 10|77r65
+72U14*Context_Finalize 10|78r65
+80V13*Get_Auth{6|76A12} 10|79r65
+X 6 lsc-internal-ripemd160.ads
+56K22*RIPEMD160 152e27 10|38w19 73r50 74r50 75r50
+67A12*Block_Type{7|74A9}<7|50I9> 10|73r60
+76A12*Hash_Type{7|74A9}<7|50I9> 10|75r60
+79M12*Block_Length_Type{7|56M12} 10|74r60
+X 7 lsc-internal-types.ads
+56M12*Word32{1|74M9}
+74A9*Word32_Array_Type(56M12)<50I9>
+X 8 lsc-ripemd160.ads
+42K13*RIPEMD160 2|38k9 8|51e18 9|37r13 52r9 10|42r18 85r9
+X 9 lsc-ripemd160-hmac_generic.ads
+37K23*HMAC_Generic 8|42k13 9|52l19 52e31 10|42b28 85l19 85t31
+40E12 Key_Index_Type 42r31 10|52r22 53r37 57r11 63r41
+41E12 Key_Elem_Type 42r59 10|57r27 58r31 64r41
+42A12 Key_Type(41E12)<40E12> 49r32 10|49r20 54r36 57r42 65r41
+43E12 Message_Index_Type 45r35 10|66r41
+44E12 Message_Elem_Type 45r67 10|67r41
+45A12 Message_Type(44E12)<43E12> 50r32 10|50r20 68r41
+46E12 Hash_Index_Type 48r32 10|69r41
+47E12 Hash_Elem_Type 48r52 10|70r41
+48A12 Hash_Type(47E12)<46E12> 50r53 10|50r41 71r41
+49v13*HMAC 49>19 50>19 10|48b13 83l8 83t12
+49*19 Key{42A12} 10|49b7 82r29
+50*19 Message{45A12} 10|50b7 82r34
+X 10 lsc-ripemd160-hmac_generic.adb
+52E15 KIT{9|40E12} 53r58 53r71 53r80 53r89
+53E15 Internal_Key_Index{9|40E12} 54r46 58r11
+54A15 Internal_Key_Type{9|42A12}<9|40E12> 58r46
+56V16 Hash_Key[11|46]{9|42A12} 80r41
+60V16 HMAC_Internal[4|69]{9|48A12} 82s14
+X 11 lsc-ripemd160_generic.ads
+37K13*RIPEMD160_Generic 10|37w10 56r36 11|48e26
+46v13*Hash 10|56r54
+

@@ -1,0 +1,18 @@
+V "GNAT Lib v8"
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U lsc.internal%s	lsc-internal.ads	9309b287 NE OO PU PK IU
+W lsc%s			lsc.ads			lsc.ali
+
+D lsc.ads		00000000000000 51dd9bb7 lsc%s
+D lsc-internal.ads	00000000000000 c2d42930 lsc.internal%s
+D system.ads		00000000000000 b7b1312c system%s
+D /home/lypo/genodelabs/genode/contrib/libsparkcrypto-128833c0cc96fb90bae3f02a69d1ea03dbf55d78/libsparkcrypto/src/../build/pragmas.adc  00000000000000 00000000
+X 1 lsc.ads
+38K9*LSC 42e8 2|38r9 42r5
+X 2 lsc-internal.ads
+38K13*Internal 1|38k9 2|42l9 42e17
+

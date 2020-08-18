@@ -1,0 +1,26 @@
+V "GNAT Lib v8"
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U lsc.internal.ripemd160.print%s  lsc-internal-ripemd160-print.ads  18b7aed4 NE OO PU PK IU
+W lsc.internal.ripemd160%s  lsc-internal-ripemd160.adb  lsc-internal-ripemd160.ali
+
+D interfac.ads		00000000000000 5ab55268 interfaces%s
+D lsc.ads		00000000000000 51dd9bb7 lsc%s
+D lsc-internal.ads	00000000000000 c2d42930 lsc.internal%s
+D lsc-internal-ripemd160.ads  00000000000000 8cb2f4c9 lsc.internal.ripemd160%s
+D lsc-internal-ripemd160-print.ads  00000000000000 94055a1d lsc.internal.ripemd160.print%s
+D lsc-internal-types.ads  00000000000000 b0932367 lsc.internal.types%s
+D system.ads		00000000000000 b7b1312c system%s
+D /home/lypo/genodelabs/genode/contrib/libsparkcrypto-128833c0cc96fb90bae3f02a69d1ea03dbf55d78/libsparkcrypto/src/../build/pragmas.adc  00000000000000 00000000
+X 2 lsc.ads
+38K9*LSC 42e8 5|43r17 46r5
+X 3 lsc-internal.ads
+38K13*Internal 2|38k9 3|42e17 5|43r21 46r9
+X 4 lsc-internal-ripemd160.ads
+56K22*RIPEMD160 3|38k13 4|152e27 5|43r30 46r18
+X 5 lsc-internal-ripemd160-print.ads
+43K40*Print 4|56k22 5|46l28 46e33
+

@@ -1,0 +1,80 @@
+V "GNAT Lib v8"
+P SS ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV SPARK_05
+
+U lsc.aes.cbc%s		lsc-aes-cbc.ads		04b8b379 NE OO PK IU
+W ada%s			ada.ads			ada.ali
+Z ada.unchecked_conversion%s
+Z interfaces%s		interfac.ads		interfac.ali
+W lsc%s			lsc.ads			lsc.ali
+W lsc.aes%s		lsc-aes.ads		lsc-aes.ali
+W lsc.aes_generic%s	lsc-aes_generic.adb	lsc-aes_generic.ali
+W lsc.aes_generic.cbc%s	lsc-aes_generic-cbc.adb	lsc-aes_generic-cbc.ali  EA
+W lsc.internal%s	lsc-internal.ads	lsc-internal.ali
+Z lsc.internal.aes%s	lsc-internal-aes.adb	lsc-internal-aes.ali
+W lsc.types%s		lsc-types.ads		lsc-types.ali
+Z system.arith_64%s	s-arit64.adb		s-arit64.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+D ada.ads		00000000000000 76789da1 ada%s
+D a-unccon.ads		00000000000000 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		00000000000000 5ab55268 interfaces%s
+D lsc.ads		00000000000000 51dd9bb7 lsc%s
+D lsc-aes.ads		00000000000000 3a842f52 lsc.aes%s
+D lsc-aes-cbc.ads	00000000000000 ceea3ea1 lsc.aes.cbc%s
+D lsc-aes_generic.ads	00000000000000 26ea5525 lsc.aes_generic%s
+D lsc-aes_generic.adb	00000000000000 29377281 lsc.aes_generic%b
+D lsc-aes_generic-cbc.ads  00000000000000 9a2331be lsc.aes_generic.cbc%s
+D lsc-aes_generic-cbc.adb  00000000000000 3b6aeb47 lsc.aes_generic.cbc%b
+D lsc-internal.ads	00000000000000 c2d42930 lsc.internal%s
+D lsc-internal-aes.ads	00000000000000 aa68241f lsc.internal.aes%s
+D lsc-internal-convert.ads  00000000000000 6a963ee7 lsc.internal.convert%s
+D lsc-internal-types.ads  00000000000000 b0932367 lsc.internal.types%s
+D lsc-ops_generic.ads	00000000000000 00e9b304 lsc.ops_generic%s
+D lsc-ops_generic.adb	00000000000000 16de1101 lsc.ops_generic%b
+D lsc-types.ads		00000000000000 6af59334 lsc.types%s
+D system.ads		00000000000000 b7b1312c system%s
+D s-arit64.ads		00000000000000 a9f12339 system.arith_64%s
+D s-parame.ads		00000000000000 82b116e0 system.parameters%s
+D s-secsta.ads		00000000000000 79c513fd system.secondary_stack%s
+D s-stoele.ads		00000000000000 a910a9f7 system.storage_elements%s
+D /home/lypo/genodelabs/genode/contrib/libsparkcrypto-128833c0cc96fb90bae3f02a69d1ea03dbf55d78/libsparkcrypto/src/../build/pragmas.adc  00000000000000 00000000
+X 3 interfac.ads
+55I9*Integer_64<long_long_integer>
+X 4 lsc.ads
+38K9*LSC 42e8 6|37r6 38r6 42r9 52r5
+X 5 lsc-aes.ads
+42K13*AES 4|38k9 5|65e12 6|42r13 52r9
+X 6 lsc-aes-cbc.ads
+42K17*CBC 5|42k13 6|52l13 52e16
+44U14*Decrypt[9|46] 10|45b14
+48U14*Encrypt[9|64] 10|90b14
+X 7 lsc-aes_generic.ads
+39K13*AES_Generic 6|38r10 45r7 49r7 7|121e20
+X 9 lsc-aes_generic-cbc.ads
+37K25*CBC 6|38w22 40r39 45r19 49r19 9|75e24
+46u14*Decrypt 6|45r23
+64u14*Encrypt 6|49r23
+X 10 lsc-aes_generic-cbc.adb
+53U17 Decrypt_XOR[15|54] 16|45b14[6|44]
+58V16 Decrypt[7|80]{17|45A9} 8|71b13[6|44]
+100U17 Encrypt_XOR[15|54] 16|45b14[6|48]
+105V16 Encrypt[7|95]{17|45A9} 8|82b13[6|48]
+X 17 lsc-types.ads
+37K13*Types 6|37w10 45r32 45r53 45r65 46r32 46r53 46r65 49r32 49r53 49r65
+. 50r32 50r53 50r65 17|47e14
+39M9*Byte 6|45r59 46r59 49r59 50r59
+42I12*Natural_Index{natural} 6|45r38 46r38 49r38 50r38
+45A9*Bytes(39M9)<integer> 6|45r71 46r71 49r71 50r71
+X 19 s-arit64.ads
+56I12*Int64{3|55I9}
+78V13*Multiply_With_Ovflo_Check{56I12} 79i<c,__gnat_mulv64>22
+

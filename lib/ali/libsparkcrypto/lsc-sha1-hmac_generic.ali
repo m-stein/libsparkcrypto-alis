@@ -1,0 +1,105 @@
+V "GNAT Lib v8"
+P ZX
+
+RN
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U lsc.sha1.hmac_generic%b  lsc-sha1-hmac_generic.adb  a6754dcc NE OO PK IU
+W lsc%s			lsc.ads			lsc.ali
+W lsc.internal%s	lsc-internal.ads	lsc-internal.ali
+W lsc.internal.convert_hmac%s  lsc-internal-convert_hmac.adb  lsc-internal-convert_hmac.ali
+W lsc.internal.hmac_sha1%s  lsc-internal-hmac_sha1.adb  lsc-internal-hmac_sha1.ali
+W lsc.internal.sha1%s	lsc-internal-sha1.adb	lsc-internal-sha1.ali
+W lsc.sha1%s		lsc-sha1.ads		lsc-sha1.ali
+W lsc.sha1_generic%s	lsc-sha1_generic.adb	lsc-sha1_generic.ali
+
+U lsc.sha1.hmac_generic%s  lsc-sha1-hmac_generic.ads  c897ce26 BN EE NE OO PK IU
+W lsc.sha1%s		lsc-sha1.ads		lsc-sha1.ali
+
+D interfac.ads		00000000000000 5ab55268 interfaces%s
+D lsc.ads		00000000000000 51dd9bb7 lsc%s
+D lsc-internal.ads	00000000000000 c2d42930 lsc.internal%s
+D lsc-internal-convert_hmac.ads  00000000000000 ff458049 lsc.internal.convert_hmac%s
+D lsc-internal-hmac_sha1.ads  00000000000000 ef4d1ab5 lsc.internal.hmac_sha1%s
+D lsc-internal-sha1.ads	00000000000000 c9e5ebe7 lsc.internal.sha1%s
+D lsc-internal-types.ads  00000000000000 b0932367 lsc.internal.types%s
+D lsc-sha1.ads		00000000000000 1e0b3840 lsc.sha1%s
+D lsc-sha1-hmac_generic.ads  00000000000000 d69cf666 lsc.sha1.hmac_generic%s
+D lsc-sha1-hmac_generic.adb  00000000000000 c3fe5ef8 lsc.sha1.hmac_generic%b
+D lsc-sha1_generic.ads	00000000000000 6afa9449 lsc.sha1_generic%s
+D lsc-types.ads		00000000000000 6af59334 lsc.types%s
+D system.ads		00000000000000 b7b1312c system%s
+D /home/lypo/genodelabs/genode/contrib/libsparkcrypto-128833c0cc96fb90bae3f02a69d1ea03dbf55d78/libsparkcrypto/src/../build/pragmas.adc  00000000000000 00000000
+X 1 interfac.ads
+74M9*Unsigned_32
+X 2 lsc.ads
+38K9*LSC 42e8 9|37r9 52r5 10|37r6 38r6 39r6 40r6 42r14 57r32 86r5
+X 3 lsc-internal.ads
+38K13*Internal 42e17 10|38r10 39r10 40r10 61r37 73r41 74r41 75r41 76r41 77r41
+. 78r41 79r41 80r41
+X 4 lsc-internal-convert_hmac.ads
+37K22*Convert_HMAC 73e30 10|40w19 61r46
+40i7 Block_Len{natural} 10|62r11
+41i7 Hash_Len{natural} 10|63r11
+42E12 Key_Index_Type 10|64r11
+43E12 Key_Elem_Type 10|65r11
+44A12 Key_Type(43E12)<42E12> 10|66r11
+45E12 Message_Index_Type 10|67r11
+46E12 Message_Elem_Type 10|68r11
+47A12 Message_Type(46E12)<45E12> 10|69r11
+48E12 Hash_Index_Type 10|70r11
+49E12 Hash_Elem_Type 10|71r11
+50A12 Hash_Type(49E12)<48E12> 10|72r11
+51+12 Internal_Context_Type 10|73r11
+52+12 Internal_Block_Type 10|74r11
+53E12 Internal_Block_Length_Type 10|75r11
+54+12 Internal_Hash_Type 10|76r11
+56V21 Context_Init{51+12} 10|77r11
+58U22 Context_Update 10|78r11
+61U22 Context_Finalize 10|79r11
+65V21 Get_Auth{54+12} 10|80r11
+67V21 Hash_Key{44A12} 10|81r11
+69v13*HMAC_Generic 10|61r59
+X 5 lsc-internal-hmac_sha1.ads
+50K22*HMAC_SHA1 98e27 10|39w19 73r50 77r50 78r50 79r50 80r50
+55R9*Context_Type 96e14 10|73r60
+58V13*Context_Init{55R9} 10|77r60
+61U14*Context_Update 10|78r60
+69U14*Context_Finalize 10|79r60
+77V13*Get_Auth{6|70A12} 10|80r60
+X 6 lsc-internal-sha1.ads
+50K22*SHA1 157e22 10|38w19 74r50 75r50 76r50
+61A12*Block_Type{7|74A9}<7|50I9> 10|74r55
+70A12*Hash_Type{7|74A9}<7|50I9> 10|76r55
+73M12*Block_Length_Type{7|56M12} 10|75r55
+X 7 lsc-internal-types.ads
+56M12*Word32{1|74M9}
+74A9*Word32_Array_Type(56M12)<50I9>
+X 8 lsc-sha1.ads
+42K13*SHA1 2|38k9 8|51e13 9|37r13 52r9 10|42r18 86r9
+X 9 lsc-sha1-hmac_generic.ads
+37K18*HMAC_Generic 8|42k13 9|52l14 52e26 10|42b23 86l14 86t26
+40E12 Key_Index_Type 42r31 10|53r22 54r37 58r11 64r41
+41E12 Key_Elem_Type 42r59 10|58r27 59r31 65r41
+42A12 Key_Type(41E12)<40E12> 49r29 10|50r20 55r36 58r42 66r41
+43E12 Message_Index_Type 45r35 10|67r41
+44E12 Message_Elem_Type 45r67 10|68r41
+45A12 Message_Type(44E12)<43E12> 50r29 10|51r20 69r41
+46E12 Hash_Index_Type 48r32 10|70r41
+47E12 Hash_Elem_Type 48r52 10|71r41
+48A12 Hash_Type(47E12)<46E12> 50r50 10|51r41 72r41
+49v13*HMAC 49>19 50>19 10|49b13 84l8 84t12
+49*19 Key{42A12} 10|50b7 83r29
+50*19 Message{45A12} 10|51b7 83r34
+X 10 lsc-sha1-hmac_generic.adb
+53E15 KIT{9|40E12} 54r58 54r71 54r80 54r89
+54E15 Internal_Key_Index{9|40E12} 55r46 59r11
+55A15 Internal_Key_Type{9|42A12}<9|40E12> 59r46
+57V16 Hash_Key[11|46]{9|42A12} 81r41
+61V16 HMAC_Internal[4|69]{9|48A12} 83s14
+X 11 lsc-sha1_generic.ads
+37K13*SHA1_Generic 10|37w10 57r36 11|48e21
+46v13*Hash 10|57r49
+

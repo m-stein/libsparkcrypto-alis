@@ -1,0 +1,48 @@
+V "GNAT Lib v8"
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U lsc.internal.byteswap64%b  lsc-internal-byteswap64.adb  42bda7ed NE OO PK IU
+W lsc%s			lsc.ads			lsc.ali
+W lsc.internal%s	lsc-internal.ads	lsc-internal.ali
+W lsc.internal.ops64%s	lsc-internal-ops64.adb	lsc-internal-ops64.ali
+
+U lsc.internal.byteswap64%s  lsc-internal-byteswap64.ads  2907e320 BN NE OO PU PK IU
+W lsc%s			lsc.ads			lsc.ali
+W lsc.internal%s	lsc-internal.ads	lsc-internal.ali
+W lsc.internal.types%s	lsc-internal-types.adb	lsc-internal-types.ali
+
+D interfac.ads		00000000000000 5ab55268 interfaces%s
+D lsc.ads		00000000000000 51dd9bb7 lsc%s
+D lsc-internal.ads	00000000000000 c2d42930 lsc.internal%s
+D lsc-internal-byteswap64.ads  00000000000000 5b40e977 lsc.internal.byteswap64%s
+D lsc-internal-byteswap64.adb  00000000000000 cd62d38c lsc.internal.byteswap64%b
+D lsc-internal-ops64.ads  00000000000000 d49f9d16 lsc.internal.ops64%s
+D lsc-internal-types.ads  00000000000000 b0932367 lsc.internal.types%s
+D system.ads		00000000000000 b7b1312c system%s
+D /home/lypo/genodelabs/genode/contrib/libsparkcrypto-128833c0cc96fb90bae3f02a69d1ea03dbf55d78/libsparkcrypto/src/../build/pragmas.adc  00000000000000 00000000
+X 1 interfac.ads
+63M9*Unsigned_8
+77M9*Unsigned_64
+X 2 lsc.ads
+38K9*LSC 42e8 4|35r6 40r9 50r5 5|35r6 37r14 48r5
+X 3 lsc-internal.ads
+38K13*Internal 2|38k9 3|42e17 4|35r10 40r13 50r9 5|35r10 37r18 48r9
+X 4 lsc-internal-byteswap64.ads
+40K22*Byteswap64 3|38k13 4|50l18 50e28 5|37b27 48l18 48t28
+47V13*Swap{7|59M12} 47>19 48r19 5|39b13 46l8 46t12
+47m19 Value{7|59M12} 5|39b19 43r45
+X 5 lsc-internal-byteswap64.adb
+41a7 Temp{7|71A9} 43m7 44r35 44r45 44r55 44r65 45r35 45r45 45r55 45r65
+X 6 lsc-internal-ops64.ads
+42K22*Ops64 5|35w19 44r14 6|101e23
+74V13*Bytes_To_Word{7|59M12} 5|44s20
+X 7 lsc-internal-types.ads
+43K22*Types 4|35w19 47r27 47r48 5|39r27 39r48 41r14 43r15 7|95e23
+53M12*Byte{1|63M9}
+59M12*Word64{1|77M9} 4|47r33 47r54 5|39r33 39r54
+71A9*Byte_Array64_Type(53M12)<50I9> 5|41r20
+88V13*Word64_To_Byte_Array64{71A9} 5|43s21
+
