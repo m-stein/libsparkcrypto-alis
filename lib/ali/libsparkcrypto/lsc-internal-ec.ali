@@ -1,19 +1,16 @@
-V "GNAT Lib v8"
+V "GNAT Lib v10"
 P ZX
 
 RN
 RV NO_DIRECT_BOOLEAN_OPERATORS
-RV NO_IMPLICIT_CONDITIONALS
 RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
 RV NO_IMPLEMENTATION_PRAGMAS
-RV NO_IMPLICIT_LOOPS
-RV NO_ELABORATION_CODE
 
 U lsc.internal.ec%b	lsc-internal-ec.adb	990e6b2e NE OO PK IU
 W lsc.internal%s	lsc-internal.ads	lsc-internal.ali
 
-U lsc.internal.ec%s	lsc-internal-ec.ads	e61adeee EE OO PU PK IU
+U lsc.internal.ec%s	lsc-internal-ec.ads	e61adeee NE OO PU PK IU
 W lsc%s			lsc.ads			lsc.ali
 W lsc.internal%s	lsc-internal.ads	lsc-internal.ali
 W lsc.internal.bignum%s	lsc-internal-bignum.adb	lsc-internal-bignum.ali
@@ -29,7 +26,71 @@ D lsc-internal-ec.adb	00000000000000 940cab85 lsc.internal.ec%b
 D lsc-internal-math_int.ads  00000000000000 0240ba29 lsc.internal.math_int%s
 D lsc-internal-types.ads  00000000000000 b0932367 lsc.internal.types%s
 D system.ads		00000000000000 b7b1312c system%s
-D /home/lypo/genodelabs/genode/contrib/libsparkcrypto-128833c0cc96fb90bae3f02a69d1ea03dbf55d78/libsparkcrypto/src/../build/pragmas.adc  00000000000000 00000000
+D /home/lypo/genodelabs/genode/contrib/libsparkcrypto-924de3e010a59511447f0392a2df3e3565ccaf5f/libsparkcrypto/src/../build/pragmas.adc  00000000000000 00000000
+G a e
+G c Z s s [point_double_spec lsc__internal__ec 52 13 none]
+G c Z s b [point_double lsc__internal__ec 57 14 none]
+G c Z s s [point_add_spec lsc__internal__ec 137 13 none]
+G c Z s b [point_add lsc__internal__ec 142 14 none]
+G c Z s s [point_mult_spec lsc__internal__ec 246 13 none]
+G c Z s b [point_mult lsc__internal__ec 251 14 none]
+G c Z s s [two_point_mult_spec lsc__internal__ec 333 13 none]
+G c Z s b [two_point_mult lsc__internal__ec 338 14 none]
+G c Z s b [make_affine lsc__internal__ec 448 14 none]
+G c Z s b [invert lsc__internal__ec 509 14 none]
+G c Z s b [on_curve lsc__internal__ec 545 13 none]
+G c Z s b [uncompress_point lsc__internal__ec 589 14 none]
+G r c none [point_double lsc__internal__ec 57 14 none] [is_zero lsc__internal__bignum 381 13 none]
+G r c none [point_double lsc__internal__ec 57 14 none] [mod_add lsc__internal__bignum 280 14 none]
+G r c none [point_double lsc__internal__ec 57 14 none] [mont_mult lsc__internal__bignum 461 14 none]
+G r c none [point_double lsc__internal__ec 57 14 none] [mod_add_inplace lsc__internal__bignum 247 14 none]
+G r c none [point_double lsc__internal__ec 57 14 none] [mod_sub_inplace lsc__internal__bignum 317 14 none]
+G r c none [point_double lsc__internal__ec 57 14 none] [mod_sub lsc__internal__bignum 347 14 none]
+G r c none [point_double lsc__internal__ec 57 14 none] [initialize lsc__internal__bignum 63 14 none]
+G r c none [point_add lsc__internal__ec 142 14 none] [is_zero lsc__internal__bignum 381 13 none]
+G r c none [point_add lsc__internal__ec 142 14 none] [mont_mult lsc__internal__bignum 461 14 none]
+G r c none [point_add lsc__internal__ec 142 14 none] [mod_sub lsc__internal__bignum 347 14 none]
+G r c none [point_add lsc__internal__ec 142 14 none] [mod_add lsc__internal__bignum 280 14 none]
+G r c none [point_add lsc__internal__ec 142 14 none] [mod_sub_inplace lsc__internal__bignum 317 14 none]
+G r c none [point_add lsc__internal__ec 142 14 none] [initialize lsc__internal__bignum 63 14 none]
+G r c none [point_add lsc__internal__ec 142 14 none] [mod_add_inplace lsc__internal__bignum 247 14 none]
+G r c none [point_add lsc__internal__ec 142 14 none] [copy lsc__internal__bignum 77 14 none]
+G r c none [point_mult lsc__internal__ec 251 14 none] [initialize lsc__internal__bignum 63 14 none]
+G r c none [point_mult lsc__internal__ec 251 14 none] [is_zero lsc__internal__bignum 381 13 none]
+G r c none [point_mult lsc__internal__ec 251 14 none] [mod_add lsc__internal__bignum 280 14 none]
+G r c none [point_mult lsc__internal__ec 251 14 none] [mont_mult lsc__internal__bignum 461 14 none]
+G r c none [point_mult lsc__internal__ec 251 14 none] [mod_add_inplace lsc__internal__bignum 247 14 none]
+G r c none [point_mult lsc__internal__ec 251 14 none] [mod_sub_inplace lsc__internal__bignum 317 14 none]
+G r c none [point_mult lsc__internal__ec 251 14 none] [mod_sub lsc__internal__bignum 347 14 none]
+G r c none [point_mult lsc__internal__ec 251 14 none] [copy lsc__internal__bignum 77 14 none]
+G r c none [two_point_mult lsc__internal__ec 338 14 none] [is_zero lsc__internal__bignum 381 13 none]
+G r c none [two_point_mult lsc__internal__ec 338 14 none] [mont_mult lsc__internal__bignum 461 14 none]
+G r c none [two_point_mult lsc__internal__ec 338 14 none] [mod_sub lsc__internal__bignum 347 14 none]
+G r c none [two_point_mult lsc__internal__ec 338 14 none] [mod_add lsc__internal__bignum 280 14 none]
+G r c none [two_point_mult lsc__internal__ec 338 14 none] [mod_sub_inplace lsc__internal__bignum 317 14 none]
+G r c none [two_point_mult lsc__internal__ec 338 14 none] [initialize lsc__internal__bignum 63 14 none]
+G r c none [two_point_mult lsc__internal__ec 338 14 none] [mod_add_inplace lsc__internal__bignum 247 14 none]
+G r c none [two_point_mult lsc__internal__ec 338 14 none] [copy lsc__internal__bignum 77 14 none]
+G r c none [make_affine lsc__internal__ec 448 14 none] [sub lsc__internal__bignum 221 14 none]
+G r c none [make_affine lsc__internal__ec 448 14 none] [mont_exp lsc__internal__bignum 498 14 none]
+G r c none [make_affine lsc__internal__ec 448 14 none] [mont_mult lsc__internal__bignum 461 14 none]
+G r c none [invert lsc__internal__ec 509 14 none] [sub lsc__internal__bignum 221 14 none]
+G r c none [invert lsc__internal__ec 509 14 none] [mont_exp lsc__internal__bignum 498 14 none]
+G r c none [invert lsc__internal__ec 509 14 none] [mont_mult lsc__internal__bignum 461 14 none]
+G r c none [on_curve lsc__internal__ec 545 13 none] [mont_mult lsc__internal__bignum 461 14 none]
+G r c none [on_curve lsc__internal__ec 545 13 none] [mod_add_inplace lsc__internal__bignum 247 14 none]
+G r c none [on_curve lsc__internal__ec 545 13 none] [mod_sub_inplace lsc__internal__bignum 317 14 none]
+G r c none [on_curve lsc__internal__ec 545 13 none] [is_zero lsc__internal__bignum 381 13 none]
+G r c none [uncompress_point lsc__internal__ec 589 14 none] [mont_mult lsc__internal__bignum 461 14 none]
+G r c none [uncompress_point lsc__internal__ec 589 14 none] [mod_add_inplace lsc__internal__bignum 247 14 none]
+G r c none [uncompress_point lsc__internal__ec 589 14 none] [add lsc__internal__bignum 173 14 none]
+G r c none [uncompress_point lsc__internal__ec 589 14 none] [shr_inplace lsc__internal__bignum 133 14 none]
+G r c none [uncompress_point lsc__internal__ec 589 14 none] [mont_exp lsc__internal__bignum 498 14 none]
+G r c none [uncompress_point lsc__internal__ec 589 14 none] [is_zero lsc__internal__bignum 381 13 none]
+G r c none [uncompress_point lsc__internal__ec 589 14 none] [sub lsc__internal__bignum 221 14 none]
+G r c none [uncompress_point lsc__internal__ec 589 14 none] [initialize lsc__internal__bignum 63 14 none]
+G r c none [uncompress_point lsc__internal__ec 589 14 none] [copy lsc__internal__bignum 77 14 none]
+G r c none [uncompress_point lsc__internal__ec 589 14 none] [equal lsc__internal__bignum 396 13 none]
 X 1 interfac.ads
 74M9*Unsigned_32
 X 2 lsc.ads

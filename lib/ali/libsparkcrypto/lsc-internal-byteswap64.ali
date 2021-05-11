@@ -1,4 +1,4 @@
-V "GNAT Lib v8"
+V "GNAT Lib v10"
 P ZX
 
 RN
@@ -22,7 +22,11 @@ D lsc-internal-byteswap64.adb  00000000000000 cd62d38c lsc.internal.byteswap64%b
 D lsc-internal-ops64.ads  00000000000000 d49f9d16 lsc.internal.ops64%s
 D lsc-internal-types.ads  00000000000000 b0932367 lsc.internal.types%s
 D system.ads		00000000000000 b7b1312c system%s
-D /home/lypo/genodelabs/genode/contrib/libsparkcrypto-128833c0cc96fb90bae3f02a69d1ea03dbf55d78/libsparkcrypto/src/../build/pragmas.adc  00000000000000 00000000
+D /home/lypo/genodelabs/genode/contrib/libsparkcrypto-924de3e010a59511447f0392a2df3e3565ccaf5f/libsparkcrypto/src/../build/pragmas.adc  00000000000000 00000000
+G a e
+G c Z s b [swap lsc__internal__byteswap64 47 13 none]
+G r c none [swap lsc__internal__byteswap64 47 13 none] [word64_to_byte_array64 lsc__internal__types 88 13 none]
+G r c none [swap lsc__internal__byteswap64 47 13 none] [bytes_to_word lsc__internal__ops64 74 13 none]
 X 1 interfac.ads
 63M9*Unsigned_8
 77M9*Unsigned_64

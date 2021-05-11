@@ -1,4 +1,4 @@
-V "GNAT Lib v8"
+V "GNAT Lib v10"
 P ZX
 
 RN
@@ -31,7 +31,39 @@ D lsc-internal-ops32.ads  00000000000000 763e99d1 lsc.internal.ops32%s
 D lsc-internal-ripemd160.ads  00000000000000 8cb2f4c9 lsc.internal.ripemd160%s
 D lsc-internal-types.ads  00000000000000 b0932367 lsc.internal.types%s
 D system.ads		00000000000000 b7b1312c system%s
-D /home/lypo/genodelabs/genode/contrib/libsparkcrypto-128833c0cc96fb90bae3f02a69d1ea03dbf55d78/libsparkcrypto/src/../build/pragmas.adc  00000000000000 00000000
+D /home/lypo/genodelabs/genode/contrib/libsparkcrypto-924de3e010a59511447f0392a2df3e3565ccaf5f/libsparkcrypto/src/../build/pragmas.adc  00000000000000 00000000
+G a e
+G c Z s b [context_init lsc__internal__hmac_ripemd160 59 13 none]
+G c Z s b [context_update lsc__internal__hmac_ripemd160 62 14 none]
+G c Z s b [context_finalize lsc__internal__hmac_ripemd160 72 14 none]
+G c Z s b [get_auth lsc__internal__hmac_ripemd160 80 13 none]
+G c Z s b [authenticate lsc__internal__hmac_ripemd160 85 13 none]
+G c Z s s [context_typeIP lsc__internal__hmac_ripemd160 97 9 none]
+G c Z b b [context_finalize_outer lsc__internal__hmac_ripemd160 74 14 none]
+G r c none [context_init lsc__internal__hmac_ripemd160 59 13 none] [context_init lsc__internal__ripemd160 91 13 none]
+G r c none [context_init lsc__internal__hmac_ripemd160 59 13 none] [block_xor lsc__internal__ops32 101 14 none]
+G r c none [context_init lsc__internal__hmac_ripemd160 59 13 none] [context_update lsc__internal__ripemd160 94 14 none]
+G r c none [context_update lsc__internal__hmac_ripemd160 62 14 none] [context_update lsc__internal__ripemd160 94 14 none]
+G r c none [context_finalize lsc__internal__hmac_ripemd160 72 14 none] [context_finalize lsc__internal__ripemd160 101 14 none]
+G r c none [context_finalize lsc__internal__hmac_ripemd160 72 14 none] [get_hash lsc__internal__ripemd160 108 13 none]
+G r c none [context_finalize lsc__internal__hmac_ripemd160 72 14 none] [context_init lsc__internal__ripemd160 91 13 none]
+G r c none [context_finalize lsc__internal__hmac_ripemd160 72 14 none] [block_xor lsc__internal__ops32 101 14 none]
+G r c none [context_finalize lsc__internal__hmac_ripemd160 72 14 none] [context_update lsc__internal__ripemd160 94 14 none]
+G r c none [context_finalize lsc__internal__hmac_ripemd160 72 14 none] [block_copy lsc__internal__ops32 120 14 none]
+G r c none [get_auth lsc__internal__hmac_ripemd160 80 13 none] [get_hash lsc__internal__ripemd160 108 13 none]
+G r c none [authenticate lsc__internal__hmac_ripemd160 85 13 none] [context_init lsc__internal__ripemd160 91 13 none]
+G r c none [authenticate lsc__internal__hmac_ripemd160 85 13 none] [block_xor lsc__internal__ops32 101 14 none]
+G r c none [authenticate lsc__internal__hmac_ripemd160 85 13 none] [context_update lsc__internal__ripemd160 94 14 none]
+G r c none [authenticate lsc__internal__hmac_ripemd160 85 13 none] [hash_context lsc__internal__ripemd160 110 14 none]
+G r c none [authenticate lsc__internal__hmac_ripemd160 85 13 none] [get_hash lsc__internal__ripemd160 108 13 none]
+G r c none [authenticate lsc__internal__hmac_ripemd160 85 13 none] [block_copy lsc__internal__ops32 120 14 none]
+G r c none [authenticate lsc__internal__hmac_ripemd160 85 13 none] [context_finalize lsc__internal__ripemd160 101 14 none]
+G r c none [context_finalize_outer lsc__internal__hmac_ripemd160 74 14 none] [get_hash lsc__internal__ripemd160 108 13 none]
+G r c none [context_finalize_outer lsc__internal__hmac_ripemd160 74 14 none] [context_init lsc__internal__ripemd160 91 13 none]
+G r c none [context_finalize_outer lsc__internal__hmac_ripemd160 74 14 none] [block_xor lsc__internal__ops32 101 14 none]
+G r c none [context_finalize_outer lsc__internal__hmac_ripemd160 74 14 none] [context_update lsc__internal__ripemd160 94 14 none]
+G r c none [context_finalize_outer lsc__internal__hmac_ripemd160 74 14 none] [block_copy lsc__internal__ops32 120 14 none]
+G r c none [context_finalize_outer lsc__internal__hmac_ripemd160 74 14 none] [context_finalize lsc__internal__ripemd160 101 14 none]
 X 1 interfac.ads
 74M9*Unsigned_32
 77M9*Unsigned_64

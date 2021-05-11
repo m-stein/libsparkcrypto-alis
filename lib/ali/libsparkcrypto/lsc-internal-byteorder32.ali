@@ -1,4 +1,4 @@
-V "GNAT Lib v8"
+V "GNAT Lib v10"
 P ZX
 
 RN
@@ -22,7 +22,14 @@ D lsc-internal-byteorder32.adb  00000000000000 3f44e2b8 lsc.internal.byteorder32
 D lsc-internal-byteswap32.ads  00000000000000 df2401ae lsc.internal.byteswap32%s
 D lsc-internal-types.ads  00000000000000 b0932367 lsc.internal.types%s
 D system.ads		00000000000000 b7b1312c system%s
-D /home/lypo/genodelabs/genode/contrib/libsparkcrypto-128833c0cc96fb90bae3f02a69d1ea03dbf55d78/libsparkcrypto/src/../build/pragmas.adc  00000000000000 00000000
+D /home/lypo/genodelabs/genode/contrib/libsparkcrypto-924de3e010a59511447f0392a2df3e3565ccaf5f/libsparkcrypto/src/../build/pragmas.adc  00000000000000 00000000
+G a e
+G c Z s b [native_to_be lsc__internal__byteorder32 45 13 none]
+G c Z s b [native_to_le lsc__internal__byteorder32 49 13 none]
+G c Z s b [be_to_native lsc__internal__byteorder32 53 13 none]
+G c Z s b [le_to_native lsc__internal__byteorder32 57 13 none]
+G r c none [native_to_be lsc__internal__byteorder32 45 13 none] [swap lsc__internal__byteswap32 47 13 none]
+G r c none [be_to_native lsc__internal__byteorder32 53 13 none] [swap lsc__internal__byteswap32 47 13 none]
 X 1 interfac.ads
 74M9*Unsigned_32
 X 2 lsc.ads

@@ -1,4 +1,4 @@
-V "GNAT Lib v8"
+V "GNAT Lib v10"
 P ZX
 
 RN
@@ -44,7 +44,42 @@ D lsc-internal-byteorder32.ads  00000000000000 35c7f604 lsc.internal.byteorder32
 D lsc-internal-math_int.ads  00000000000000 0240ba29 lsc.internal.math_int%s
 D lsc-internal-types.ads  00000000000000 b0932367 lsc.internal.types%s
 D system.ads		00000000000000 b7b1312c system%s
-D /home/lypo/genodelabs/genode/contrib/libsparkcrypto-128833c0cc96fb90bae3f02a69d1ea03dbf55d78/libsparkcrypto/src/../build/pragmas.adc  00000000000000 00000000
+D /home/lypo/genodelabs/genode/contrib/libsparkcrypto-924de3e010a59511447f0392a2df3e3565ccaf5f/libsparkcrypto/src/../build/pragmas.adc  00000000000000 00000000
+G a e
+G c Z s s [base lsc__internal__bignum 46 13 none]
+G c Z s s [num_of_big_int lsc__internal__bignum 53 13 none]
+G c Z s s [num_of_boolean lsc__internal__bignum 57 13 none]
+G c Z s s [inverse lsc__internal__bignum 60 13 none]
+G c Z s b [initialize lsc__internal__bignum 63 14 none]
+G c Z s b [copy lsc__internal__bignum 77 14 none]
+G c Z s b [native_to_be lsc__internal__bignum 99 14 none]
+G c Z s b [double_inplace lsc__internal__bignum 115 14 none]
+G c Z s b [shr_inplace lsc__internal__bignum 133 14 none]
+G c Z s b [add_inplace lsc__internal__bignum 151 14 none]
+G c Z s b [add lsc__internal__bignum 173 14 none]
+G c Z s b [sub_inplace lsc__internal__bignum 199 14 none]
+G c Z s b [sub lsc__internal__bignum 221 14 none]
+G c Z s b [mod_add_inplace lsc__internal__bignum 247 14 none]
+G c Z s b [mod_add lsc__internal__bignum 280 14 none]
+G c Z s b [mod_sub_inplace lsc__internal__bignum 317 14 none]
+G c Z s b [mod_sub lsc__internal__bignum 347 14 none]
+G c Z s b [is_zero lsc__internal__bignum 381 13 none]
+G c Z s b [equal lsc__internal__bignum 396 13 none]
+G c Z s b [less lsc__internal__bignum 415 13 none]
+G c Z s b [size_square_mod lsc__internal__bignum 434 14 none]
+G c Z s b [word_inverse lsc__internal__bignum 456 13 none]
+G c Z s b [mont_mult lsc__internal__bignum 461 14 none]
+G c Z s b [mont_exp lsc__internal__bignum 498 14 none]
+G c Z s b [mont_exp_window lsc__internal__bignum 565 14 none]
+G c Z s s [big_intIP lsc__internal__bignum 51 9 none]
+G c Z b b [gcd lsc__internal__bignum 41 13 none]
+G c Z b b [word_of_boolean lsc__internal__bignum 131 13 none]
+G c Z b b [single_add_mult_mult lsc__internal__bignum 683 14 none]
+G c Z b b [add_mult_mult lsc__internal__bignum 726 14 none]
+G c Z b b [bit_set lsc__internal__bignum 989 13 none]
+G r c none [base lsc__internal__bignum 46 13 none] [from_word32 lsc__internal__math_int 50 13 none]
+G r c none [base lsc__internal__bignum 46 13 none] [Oexpon lsc__internal__math_int 26 13 none]
+G r c none [native_to_be lsc__internal__bignum 99 14 none] [native_to_be lsc__internal__byteorder32 45 13 none]
 X 1 interfac.ads
 38K9*Interfaces 184e15 5|35w6 169r19 206r12 207r12 717r9 718r9 719r9 721r31
 . 1189r24 1275r44

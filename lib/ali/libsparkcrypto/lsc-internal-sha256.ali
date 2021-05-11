@@ -1,4 +1,4 @@
-V "GNAT Lib v8"
+V "GNAT Lib v10"
 P ZX
 
 RN
@@ -37,7 +37,38 @@ D lsc-internal-sha256-tables.ads  00000000000000 f3ccadb5 lsc.internal.sha256.ta
 D lsc-internal-types.ads  00000000000000 b0932367 lsc.internal.types%s
 D system.ads		00000000000000 b7b1312c system%s
 D s-arit64.ads		00000000000000 a9f12339 system.arith_64%s
-D /home/lypo/genodelabs/genode/contrib/libsparkcrypto-128833c0cc96fb90bae3f02a69d1ea03dbf55d78/libsparkcrypto/src/../build/pragmas.adc  00000000000000 00000000
+D /home/lypo/genodelabs/genode/contrib/libsparkcrypto-924de3e010a59511447f0392a2df3e3565ccaf5f/libsparkcrypto/src/../build/pragmas.adc  00000000000000 00000000
+G a e
+G c Z s b [sha256_context_init lsc__internal__sha256 87 13 none]
+G c Z s b [context_update lsc__internal__sha256 90 14 none]
+G c Z s b [context_finalize lsc__internal__sha256 98 14 none]
+G c Z s b [sha256_get_hash lsc__internal__sha256 105 13 none]
+G c Z s b [hash_context lsc__internal__sha256 107 14 none]
+G c Z s b [hash lsc__internal__sha256 119 13 none]
+G c Z s s [data_lengthIP lsc__internal__sha256 136 9 none]
+G c Z s s [context_typeIP lsc__internal__sha256 147 9 none]
+G c Z s s [message_typeIP lsc__internal__sha256 84 9 none]
+G c Z b b [init_data_length lsc__internal__sha256 44 13 none]
+G c Z b b [add lsc__internal__sha256 51 14 none]
+G c Z b b [ch lsc__internal__sha256 67 13 none]
+G c Z b b [maj lsc__internal__sha256 82 13 none]
+G c Z b b [cap_sigma_0_256 lsc__internal__sha256 97 13 none]
+G c Z b b [cap_sigma_1_256 lsc__internal__sha256 109 13 none]
+G c Z b b [sigma_0_256 lsc__internal__sha256 121 13 none]
+G c Z b b [sigma_1_256 lsc__internal__sha256 133 13 none]
+G c Z b b [context_update_internal lsc__internal__sha256 162 14 none]
+G r c none [context_update lsc__internal__sha256 90 14 none] [native_to_be lsc__internal__byteorder32 45 13 none]
+G r c none [context_finalize lsc__internal__sha256 98 14 none] [block_terminate lsc__internal__pad32 52 14 none]
+G r c none [context_finalize lsc__internal__sha256 98 14 none] [native_to_be lsc__internal__byteorder32 45 13 none]
+G r c none [context_finalize lsc__internal__sha256 98 14 none] [be_to_native lsc__internal__byteorder32 53 13 none]
+G r c none [sha256_get_hash lsc__internal__sha256 105 13 none] [be_to_native lsc__internal__byteorder32 53 13 none]
+G r c none [hash_context lsc__internal__sha256 107 14 none] [native_to_be lsc__internal__byteorder32 45 13 none]
+G r c none [hash_context lsc__internal__sha256 107 14 none] [block_terminate lsc__internal__pad32 52 14 none]
+G r c none [hash_context lsc__internal__sha256 107 14 none] [be_to_native lsc__internal__byteorder32 53 13 none]
+G r c none [hash lsc__internal__sha256 119 13 none] [native_to_be lsc__internal__byteorder32 45 13 none]
+G r c none [hash lsc__internal__sha256 119 13 none] [block_terminate lsc__internal__pad32 52 14 none]
+G r c none [hash lsc__internal__sha256 119 13 none] [be_to_native lsc__internal__byteorder32 53 13 none]
+G r c none [context_update_internal lsc__internal__sha256 162 14 none] [native_to_be lsc__internal__byteorder32 45 13 none]
 X 1 interfac.ads
 38K9*Interfaces 184e15 9|35w6 100r14 101r14 102r14 112r14 113r14 114r14 124r14
 . 125r14 126r14 136r14 137r14 138r14

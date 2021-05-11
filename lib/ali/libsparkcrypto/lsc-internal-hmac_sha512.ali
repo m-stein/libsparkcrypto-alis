@@ -1,4 +1,4 @@
-V "GNAT Lib v8"
+V "GNAT Lib v10"
 P ZX
 
 RN
@@ -31,7 +31,57 @@ D lsc-internal-ops64.ads  00000000000000 d49f9d16 lsc.internal.ops64%s
 D lsc-internal-sha512.ads  00000000000000 7c902fbe lsc.internal.sha512%s
 D lsc-internal-types.ads  00000000000000 b0932367 lsc.internal.types%s
 D system.ads		00000000000000 b7b1312c system%s
-D /home/lypo/genodelabs/genode/contrib/libsparkcrypto-128833c0cc96fb90bae3f02a69d1ea03dbf55d78/libsparkcrypto/src/../build/pragmas.adc  00000000000000 00000000
+D /home/lypo/genodelabs/genode/contrib/libsparkcrypto-924de3e010a59511447f0392a2df3e3565ccaf5f/libsparkcrypto/src/../build/pragmas.adc  00000000000000 00000000
+G a e
+G c Z s b [context_init lsc__internal__hmac_sha512 67 13 none]
+G c Z s b [context_update lsc__internal__hmac_sha512 70 14 none]
+G c Z s b [context_finalize lsc__internal__hmac_sha512 78 14 none]
+G c Z s b [get_prf lsc__internal__hmac_sha512 85 13 none]
+G c Z s b [get_auth lsc__internal__hmac_sha512 88 13 none]
+G c Z s b [pseudorandom lsc__internal__hmac_sha512 92 13 none]
+G c Z s b [authenticate lsc__internal__hmac_sha512 105 13 none]
+G c Z s s [context_typeIP lsc__internal__hmac_sha512 120 9 none]
+G c Z b b [context_finalize_outer lsc__internal__hmac_sha512 74 14 none]
+G c Z b b [keyed_hash lsc__internal__hmac_sha512 127 13 none]
+G r c none [context_init lsc__internal__hmac_sha512 67 13 none] [sha512_context_init lsc__internal__sha512 94 13 none]
+G r c none [context_init lsc__internal__hmac_sha512 67 13 none] [block_xor lsc__internal__ops64 56 14 none]
+G r c none [context_init lsc__internal__hmac_sha512 67 13 none] [context_update lsc__internal__sha512 100 14 none]
+G r c none [context_update lsc__internal__hmac_sha512 70 14 none] [context_update lsc__internal__sha512 100 14 none]
+G r c none [context_finalize lsc__internal__hmac_sha512 78 14 none] [context_finalize lsc__internal__sha512 109 14 none]
+G r c none [context_finalize lsc__internal__hmac_sha512 78 14 none] [sha512_get_hash lsc__internal__sha512 116 13 none]
+G r c none [context_finalize lsc__internal__hmac_sha512 78 14 none] [sha512_context_init lsc__internal__sha512 94 13 none]
+G r c none [context_finalize lsc__internal__hmac_sha512 78 14 none] [block_xor lsc__internal__ops64 56 14 none]
+G r c none [context_finalize lsc__internal__hmac_sha512 78 14 none] [context_update lsc__internal__sha512 100 14 none]
+G r c none [context_finalize lsc__internal__hmac_sha512 78 14 none] [block_copy lsc__internal__ops64 87 14 none]
+G r c none [get_prf lsc__internal__hmac_sha512 85 13 none] [sha512_get_hash lsc__internal__sha512 116 13 none]
+G r c none [get_auth lsc__internal__hmac_sha512 88 13 none] [sha512_get_hash lsc__internal__sha512 116 13 none]
+G r c none [pseudorandom lsc__internal__hmac_sha512 92 13 none] [sha512_context_init lsc__internal__sha512 94 13 none]
+G r c none [pseudorandom lsc__internal__hmac_sha512 92 13 none] [block_xor lsc__internal__ops64 56 14 none]
+G r c none [pseudorandom lsc__internal__hmac_sha512 92 13 none] [context_update lsc__internal__sha512 100 14 none]
+G r c none [pseudorandom lsc__internal__hmac_sha512 92 13 none] [hash_context lsc__internal__sha512 121 14 none]
+G r c none [pseudorandom lsc__internal__hmac_sha512 92 13 none] [sha512_get_hash lsc__internal__sha512 116 13 none]
+G r c none [pseudorandom lsc__internal__hmac_sha512 92 13 none] [block_copy lsc__internal__ops64 87 14 none]
+G r c none [pseudorandom lsc__internal__hmac_sha512 92 13 none] [context_finalize lsc__internal__sha512 109 14 none]
+G r c none [authenticate lsc__internal__hmac_sha512 105 13 none] [sha512_context_init lsc__internal__sha512 94 13 none]
+G r c none [authenticate lsc__internal__hmac_sha512 105 13 none] [block_xor lsc__internal__ops64 56 14 none]
+G r c none [authenticate lsc__internal__hmac_sha512 105 13 none] [context_update lsc__internal__sha512 100 14 none]
+G r c none [authenticate lsc__internal__hmac_sha512 105 13 none] [hash_context lsc__internal__sha512 121 14 none]
+G r c none [authenticate lsc__internal__hmac_sha512 105 13 none] [sha512_get_hash lsc__internal__sha512 116 13 none]
+G r c none [authenticate lsc__internal__hmac_sha512 105 13 none] [block_copy lsc__internal__ops64 87 14 none]
+G r c none [authenticate lsc__internal__hmac_sha512 105 13 none] [context_finalize lsc__internal__sha512 109 14 none]
+G r c none [context_finalize_outer lsc__internal__hmac_sha512 74 14 none] [sha512_get_hash lsc__internal__sha512 116 13 none]
+G r c none [context_finalize_outer lsc__internal__hmac_sha512 74 14 none] [sha512_context_init lsc__internal__sha512 94 13 none]
+G r c none [context_finalize_outer lsc__internal__hmac_sha512 74 14 none] [block_xor lsc__internal__ops64 56 14 none]
+G r c none [context_finalize_outer lsc__internal__hmac_sha512 74 14 none] [context_update lsc__internal__sha512 100 14 none]
+G r c none [context_finalize_outer lsc__internal__hmac_sha512 74 14 none] [block_copy lsc__internal__ops64 87 14 none]
+G r c none [context_finalize_outer lsc__internal__hmac_sha512 74 14 none] [context_finalize lsc__internal__sha512 109 14 none]
+G r c none [keyed_hash lsc__internal__hmac_sha512 127 13 none] [sha512_context_init lsc__internal__sha512 94 13 none]
+G r c none [keyed_hash lsc__internal__hmac_sha512 127 13 none] [block_xor lsc__internal__ops64 56 14 none]
+G r c none [keyed_hash lsc__internal__hmac_sha512 127 13 none] [context_update lsc__internal__sha512 100 14 none]
+G r c none [keyed_hash lsc__internal__hmac_sha512 127 13 none] [hash_context lsc__internal__sha512 121 14 none]
+G r c none [keyed_hash lsc__internal__hmac_sha512 127 13 none] [sha512_get_hash lsc__internal__sha512 116 13 none]
+G r c none [keyed_hash lsc__internal__hmac_sha512 127 13 none] [block_copy lsc__internal__ops64 87 14 none]
+G r c none [keyed_hash lsc__internal__hmac_sha512 127 13 none] [context_finalize lsc__internal__sha512 109 14 none]
 X 1 interfac.ads
 77M9*Unsigned_64
 X 2 lsc.ads

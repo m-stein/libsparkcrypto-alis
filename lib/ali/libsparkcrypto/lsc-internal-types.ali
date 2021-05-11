@@ -1,4 +1,4 @@
-V "GNAT Lib v8"
+V "GNAT Lib v10"
 P ZX
 
 RN
@@ -23,7 +23,16 @@ D lsc-internal.ads	00000000000000 c2d42930 lsc.internal%s
 D lsc-internal-types.ads  00000000000000 b0932367 lsc.internal.types%s
 D lsc-internal-types.adb  00000000000000 4dd44b5c lsc.internal.types%b
 D system.ads		00000000000000 b7b1312c system%s
-D /home/lypo/genodelabs/genode/contrib/libsparkcrypto-128833c0cc96fb90bae3f02a69d1ea03dbf55d78/libsparkcrypto/src/../build/pragmas.adc  00000000000000 00000000
+D /home/lypo/genodelabs/genode/contrib/libsparkcrypto-924de3e010a59511447f0392a2df3e3565ccaf5f/libsparkcrypto/src/../build/pragmas.adc  00000000000000 00000000
+G a e
+G c Z s b [word32_to_byte_array32 lsc__internal__types 80 13 none]
+G c Z s b [byte_array32_to_word32 lsc__internal__types 84 13 none]
+G c Z s b [word64_to_byte_array64 lsc__internal__types 88 13 none]
+G c Z s b [byte_array64_to_word64 lsc__internal__types 92 13 none]
+G c Z s s [Tbyte_array32_typeBIP lsc__internal__types 65 4 none]
+G c Z s s [Tbyte_array64_typeBIP lsc__internal__types 71 4 none]
+G c Z s s [word32_array_typeIP lsc__internal__types 74 9 none]
+G c Z s s [word64_array_typeIP lsc__internal__types 77 9 none]
 X 1 ada.ads
 16K9*Ada 20e8 7|35r6 43r31 53r31 63r31 73r31
 X 2 a-unccon.ads

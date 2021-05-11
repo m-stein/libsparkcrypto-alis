@@ -1,4 +1,4 @@
-V "GNAT Lib v8"
+V "GNAT Lib v10"
 P ZX
 
 RN
@@ -24,7 +24,8 @@ D lsc.ads		00000000000000 51dd9bb7 lsc%s
 D lsc-ops_generic.ads	00000000000000 00e9b304 lsc.ops_generic%s
 D lsc-ops_generic.adb	00000000000000 16de1101 lsc.ops_generic%b
 D system.ads		00000000000000 b7b1312c system%s
-D /home/lypo/genodelabs/genode/contrib/libsparkcrypto-128833c0cc96fb90bae3f02a69d1ea03dbf55d78/libsparkcrypto/src/../build/pragmas.adc  00000000000000 00000000
+D /home/lypo/genodelabs/genode/contrib/libsparkcrypto-924de3e010a59511447f0392a2df3e3565ccaf5f/libsparkcrypto/src/../build/pragmas.adc  00000000000000 00000000
+G a e
 X 1 ada.ads
 16K9*Ada 20e8 5|37r6 51r29 52r29 53r31
 X 2 a-unccon.ads

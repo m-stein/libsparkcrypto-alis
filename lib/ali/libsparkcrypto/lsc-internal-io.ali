@@ -1,4 +1,4 @@
-V "GNAT Lib v8"
+V "GNAT Lib v10"
 P ZX
 
 RN
@@ -21,7 +21,20 @@ D lsc-internal-io.ads	00000000000000 54473c0e lsc.internal.io%s
 D lsc-internal-io.adb	00000000000000 2696acc0 lsc.internal.io%b
 D lsc-internal-types.ads  00000000000000 b0932367 lsc.internal.types%s
 D system.ads		00000000000000 b7b1312c system%s
-D /home/lypo/genodelabs/genode/contrib/libsparkcrypto-128833c0cc96fb90bae3f02a69d1ea03dbf55d78/libsparkcrypto/src/../build/pragmas.adc  00000000000000 00000000
+D /home/lypo/genodelabs/genode/contrib/libsparkcrypto-924de3e010a59511447f0392a2df3e3565ccaf5f/libsparkcrypto/src/../build/pragmas.adc  00000000000000 00000000
+G a e
+G c Z s b [put lsc__internal__io 46 14 none]
+G c Z s b [put_line lsc__internal__io 50 14 none]
+G c Z s b [new_line lsc__internal__io 54 14 none]
+G c Z s b [read_byte lsc__internal__io 58 13 none]
+G c Z s b [end_of_stream lsc__internal__io 61 13 none]
+G c Z s b [print_byte lsc__internal__io 64 14 none]
+G c Z s b [print_word32 lsc__internal__io 68 14 none]
+G c Z s b [print_word64 lsc__internal__io 72 14 none]
+G c Z s b [print_index lsc__internal__io 76 14 none]
+G c Z s b [print_natural lsc__internal__io 80 14 none]
+G c Z s b [print_word32_array lsc__internal__io 89 14 none]
+G c Z s b [print_word64_array lsc__internal__io 104 14 none]
 X 1 interfac.ads
 63M9*Unsigned_8
 74M9*Unsigned_32

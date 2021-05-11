@@ -1,4 +1,4 @@
-V "GNAT Lib v8"
+V "GNAT Lib v10"
 P ZX
 
 RN
@@ -23,7 +23,8 @@ D lsc-internal-aes.ads	00000000000000 aa68241f lsc.internal.aes%s
 D lsc-internal-convert.ads  00000000000000 6a963ee7 lsc.internal.convert%s
 D lsc-internal-types.ads  00000000000000 b0932367 lsc.internal.types%s
 D system.ads		00000000000000 b7b1312c system%s
-D /home/lypo/genodelabs/genode/contrib/libsparkcrypto-128833c0cc96fb90bae3f02a69d1ea03dbf55d78/libsparkcrypto/src/../build/pragmas.adc  00000000000000 00000000
+D /home/lypo/genodelabs/genode/contrib/libsparkcrypto-924de3e010a59511447f0392a2df3e3565ccaf5f/libsparkcrypto/src/../build/pragmas.adc  00000000000000 00000000
+G a e
 X 1 ada.ads
 16K9*Ada 20e8 7|38r6 51r25 52r25 53r25 54r32 55r30
 X 2 a-unccon.ads

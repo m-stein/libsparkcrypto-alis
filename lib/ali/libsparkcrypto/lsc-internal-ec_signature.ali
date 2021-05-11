@@ -1,4 +1,4 @@
-V "GNAT Lib v8"
+V "GNAT Lib v10"
 P ZX
 
 RN
@@ -30,7 +30,25 @@ D lsc-internal-ec_signature.adb  00000000000000 b8109ddd lsc.internal.ec_signatu
 D lsc-internal-math_int.ads  00000000000000 0240ba29 lsc.internal.math_int%s
 D lsc-internal-types.ads  00000000000000 b0932367 lsc.internal.types%s
 D system.ads		00000000000000 b7b1312c system%s
-D /home/lypo/genodelabs/genode/contrib/libsparkcrypto-128833c0cc96fb90bae3f02a69d1ea03dbf55d78/libsparkcrypto/src/../build/pragmas.adc  00000000000000 00000000
+D /home/lypo/genodelabs/genode/contrib/libsparkcrypto-924de3e010a59511447f0392a2df3e3565ccaf5f/libsparkcrypto/src/../build/pragmas.adc  00000000000000 00000000
+G a e
+G c Z s b [sign lsc__internal__ec_signature 49 14 none]
+G c Z s b [verify lsc__internal__ec_signature 152 13 none]
+G c Z b b [extract lsc__internal__ec_signature 39 14 none]
+G r c none [sign lsc__internal__ec_signature 49 14 none] [mont_mult lsc__internal__bignum 461 14 none]
+G r c none [sign lsc__internal__ec_signature 49 14 none] [point_mult lsc__internal__ec 251 14 none]
+G r c none [sign lsc__internal__ec_signature 49 14 none] [invert lsc__internal__ec 509 14 none]
+G r c none [sign lsc__internal__ec_signature 49 14 none] [mod_sub_inplace lsc__internal__bignum 317 14 none]
+G r c none [sign lsc__internal__ec_signature 49 14 none] [mod_add_inplace lsc__internal__bignum 247 14 none]
+G r c none [sign lsc__internal__ec_signature 49 14 none] [is_zero lsc__internal__bignum 381 13 none]
+G r c none [verify lsc__internal__ec_signature 152 13 none] [less lsc__internal__bignum 415 13 none]
+G r c none [verify lsc__internal__ec_signature 152 13 none] [is_zero lsc__internal__bignum 381 13 none]
+G r c none [verify lsc__internal__ec_signature 152 13 none] [invert lsc__internal__ec 509 14 none]
+G r c none [verify lsc__internal__ec_signature 152 13 none] [mont_mult lsc__internal__bignum 461 14 none]
+G r c none [verify lsc__internal__ec_signature 152 13 none] [two_point_mult lsc__internal__ec 338 14 none]
+G r c none [verify lsc__internal__ec_signature 152 13 none] [equal lsc__internal__bignum 396 13 none]
+G r c none [extract lsc__internal__ec_signature 39 14 none] [invert lsc__internal__ec 509 14 none]
+G r c none [extract lsc__internal__ec_signature 39 14 none] [mont_mult lsc__internal__bignum 461 14 none]
 X 1 interfac.ads
 74M9*Unsigned_32
 X 2 lsc.ads

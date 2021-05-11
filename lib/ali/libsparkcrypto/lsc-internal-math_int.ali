@@ -1,4 +1,4 @@
-V "GNAT Lib v8"
+V "GNAT Lib v10"
 P ZX
 
 RN
@@ -17,7 +17,23 @@ D lsc-internal.ads	00000000000000 c2d42930 lsc.internal%s
 D lsc-internal-math_int.ads  00000000000000 0240ba29 lsc.internal.math_int%s
 D lsc-internal-types.ads  00000000000000 b0932367 lsc.internal.types%s
 D system.ads		00000000000000 b7b1312c system%s
-D /home/lypo/genodelabs/genode/contrib/libsparkcrypto-128833c0cc96fb90bae3f02a69d1ea03dbf55d78/libsparkcrypto/src/../build/pragmas.adc  00000000000000 00000000
+D /home/lypo/genodelabs/genode/contrib/libsparkcrypto-924de3e010a59511447f0392a2df3e3565ccaf5f/libsparkcrypto/src/../build/pragmas.adc  00000000000000 00000000
+G a e
+G c Z s s [Oadd lsc__internal__math_int 11 13 none]
+G c Z s s [Osubtract lsc__internal__math_int 14 13 none]
+G c Z s s [Omultiply lsc__internal__math_int 17 13 none]
+G c Z s s [Odivide lsc__internal__math_int 20 13 none]
+G c Z s s [Omod lsc__internal__math_int 23 13 none]
+G c Z s s [Oexpon lsc__internal__math_int 26 13 none]
+G c Z s s [Oexpon lsc__internal__math_int 29 13 none]
+G c Z s s [Oeq lsc__internal__math_int 32 13 none]
+G c Z s s [Olt lsc__internal__math_int 35 13 none]
+G c Z s s [Ogt lsc__internal__math_int 38 13 none]
+G c Z s s [Ole lsc__internal__math_int 41 13 none]
+G c Z s s [Oge lsc__internal__math_int 44 13 none]
+G c Z s s [from_integer lsc__internal__math_int 47 13 none]
+G c Z s s [from_word32 lsc__internal__math_int 50 13 none]
+G c Z s s [from_word64 lsc__internal__math_int 53 13 none]
 X 1 interfac.ads
 74M9*Unsigned_32
 77M9*Unsigned_64
